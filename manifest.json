@@ -1,0 +1,22 @@
+{
+  "short_name": "DotLive From DotEightPlus",
+  "name": "DotLive From DotEightPlus",
+  "description": "No more hostel stress!",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/img/logo/pwa.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "./?v3&utm_source=web_app_manifest",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "color": "#ffffff",
+  "display": "standalone",
+  "related_applications": [{
+    "platform": "web",
+    "url": "https://dotlive.com.ng"
+  }]
+}

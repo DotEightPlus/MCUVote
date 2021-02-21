@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Aganè 65 (Bold) sign
+font link: https://www.graphicpear.com/agane-free-font/
+font author: Danilo De Marco
+font author site: http://www.danilodemarco.com/
+
+
+icon designer: A M
+icon designer link: /Strength
+        
+{"bg":"#50A6D8","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
