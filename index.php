@@ -16,7 +16,7 @@
                                 <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s"
                                     data-duration="2000ms">
                                     <a href="industries.html" class="btn hero-btn">Award Night
-                                        <?pho echpo date("Y"); ?>
+                                        <?php echo date("Y"); ?>
                                     </a>
                                 </div>
                             </div>
