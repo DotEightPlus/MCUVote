@@ -3722,7 +3722,7 @@ input:focus {
   font-weight: 300;
 }
 .footer-area .footer-tittle ul li a:hover {
-  color: #ff2020;
+  color: #7681b0;
   padding-left: 5px;
 }
 .footer-copy-right {
@@ -3731,19 +3731,19 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-copy-right {
     padding-top: 0px;
-    float: left;
+    float: center;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-copy-right {
     padding-top: 0px;
-    float: left;
+    float: center;
   }
 }
 @media (max-width: 575px) {
   .footer-copy-right {
     padding-top: 0px;
-    float: left;
+    float: center;
   }
 }
 .footer-copy-right p {
