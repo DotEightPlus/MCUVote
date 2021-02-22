@@ -21,7 +21,9 @@ if(row_count($rsl) == '') {
     $ssl = "UPDATE users SET `activator` = '', `active` = '1' WHERE `activator` = '$data'";
     $rl  = query($ssl);
 
-    unset($_SESSION['mail']);
+    if(isset($_SESSION['mail'])) {
+    unset($_SESSION['mail']); 
+    }   
 }
 
 }

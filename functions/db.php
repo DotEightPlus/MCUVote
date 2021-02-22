@@ -1,6 +1,6 @@
 <?php
 //creating the database to use
-$con = mysqli_connect("localhost","root","","mcu");
+$con = mysqli_connect("b529930c9ce973","us-cdbr-east-03.cleardb.com","93582d39","mcu");
 
 function row_count($result) {
 
