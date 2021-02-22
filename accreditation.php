@@ -21,11 +21,10 @@
 
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-title text-center">All (<span style="color: red;">*</span>) fields are required.
-                    </h2>
+                    <h2 class="contact-title text-center">Let`s get you accredited</h2>
                 </div>
                 <div class="col-lg-12">
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+                    <form class="form-contact contact_form" action="./accredit" method="post" id="contactForm"
                         novalidate="novalidate">
                         <div class="row">
                             <div class="col-sm-6">
@@ -43,32 +42,42 @@
                                         onblur="this.placeholder = 'Enter email address'" placeholder="Email">
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="matric" id="matric" type="email"
+                                    <input class="form-control valid" name="matric" id="matric" type="text"
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Matric Number'"
                                         placeholder="Matric Number">
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <select class="form-control valid" name="email" id="email" type="email"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                        <option>Male</option>
+
+                            <div class="col-sm-4">
+                                <div class="form-select form-group">
+                                    <select name="dept" id="dept">
+                                        <option name="dept" id="dept">Accounting</option>
+                                        <option name="dept" id="dept">Banking and Finance</option>
+                                        <option name="dept" id="dept">Economics</option>
+                                        <option name="dept" id="dept">Business Administration</option>
+                                        <option name="dept" id="dept">International Relations</option>
+                                        <option name="dept" id="dept">Mass Communication</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input class="form-control" name="subject" id="subject" type="text"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
-                                        placeholder="Enter Subject">
+
+                            <div class="col-sm-4">
+                                <div class="form-select form-group">
+                                    <select name="gender" id="gender">
+                                        <option name="gender" id="gender">Male</option>
+                                        <option name="gender" id="gender">Female</option>
+                                    </select>
                                 </div>
                             </div>
+
                         </div>
                         <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <p>Your details are automatically deleted at the end of the voting process. We respect your
+                                privacy</p>
+                            <button type="submit" name="accredit" class="button button-contactForm boxed-btn">Submit
+                                Details</button>
                         </div>
                     </form>
                 </div>
@@ -82,6 +91,17 @@
 <?php include("include/footer.php"); ?>
 
 <!-- JS here -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div style="background: #f9f9ff; color: #ff0000;" class="modal-content">
+            <div class="modal-body">
+                <div id="msg" class="text-center"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->

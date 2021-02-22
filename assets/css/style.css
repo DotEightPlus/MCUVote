@@ -2642,6 +2642,7 @@ input:focus {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 26px;
+  color: #ffffff;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .hero__caption h1 {
@@ -2674,7 +2675,7 @@ input:focus {
   line-height: 1.6;
   font-weight: 400;
   margin-bottom: 39px;
-  color: #212025;
+  color: #ffffff;
   margin-bottom: 60px;
   padding-right: 50px;
 }
@@ -2702,7 +2703,7 @@ input:focus {
   }
 }
 .slide-bg {
-  background: #f0f0f2;
+  background: #7681b0;
 }
 .slider-active button.slick-arrow {
   position: absolute;
@@ -6115,17 +6116,19 @@ del {
   right: 20px;
 }
 .form-select {
-  height: 40px;
+  height: 48px;
   width: 100%;
 }
 .form-select .nice-select {
-  border: none;
-  border-radius: 0px;
-  height: 40px;
   background: #f9f9ff;
-  padding-left: 45px;
   padding-right: 40px;
   width: 100%;
+  border: 1px solid #e5e6e9;
+  border-radius: 0px;
+  height: 48px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: transparent;
 }
 .form-select .nice-select .list {
   margin-top: 0;
@@ -6141,10 +6144,9 @@ del {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  line-height: 28px;
+  line-height: 38px;
   min-height: 28px;
-  font-size: 12px;
-  padding-left: 45px;
+  font-size: 13px;
 }
 .form-select .nice-select .list .option.selected {
   color: #222;

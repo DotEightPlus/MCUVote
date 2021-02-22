@@ -15,7 +15,9 @@
                                 <!-- Hero-btn -->
                                 <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s"
                                     data-duration="2000ms">
-                                    <a href="industries.html" class="btn hero-btn">Award Night 2021</a>
+                                    <a href="industries.html" class="btn hero-btn">Award Night
+                                        <?pho echpo date("Y"); ?>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 <?php
 //creating the database to use
-$con = mysqli_connect("us-cdbr-east-03.cleardb.com","b035ecdb1188fa","53fa1a7e","heroku_5f230635e2239b6");
+$con = mysqli_connect("localhost","root","","mcu");
 
 function row_count($result) {
 

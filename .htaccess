@@ -1,4 +1,4 @@
-ErrorDocument 404 /./404
+ErrorDocument 404 /./opps
 
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d

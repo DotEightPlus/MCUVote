@@ -1,3 +1,4 @@
+<?php include("functions/init.php"); ?>
 <!doctype html>
 <html lang="en">
 
