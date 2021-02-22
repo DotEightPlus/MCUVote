@@ -1,6 +1,29 @@
 <?php include("include/header.php");
-if(!isset($_SESSION['mail'])) {
+
+//validate link
+if(!isset($_GET['id']) ||  $_GET['id'] == '') {
+
     redirect("./opps");
+} else {
+
+ $data = $_GET['id'];
+    
+//retrieve activator details
+$sql = "SELECT * FROM users WHERE `activator` = '$data'";
+$rsl = query($sql);
+
+if(row_count($rsl) == '') {
+   
+   redirect("./opps"); 
+} else {
+
+    //verify email
+    $ssl = "UPDATE users SET `activator` = '', `active` = '1' WHERE `activator` = '$data'";
+    $rl  = query($ssl);
+
+    unset($_SESSION['mail']);
+}
+
 }
 ?>
 <main>
@@ -11,9 +34,9 @@ if(!isset($_SESSION['mail'])) {
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>Verify your Email</h2>
-                            <p style="font-size: 20px;">Check your inbox <br> Check your spam folders <br>Check your
-                                internet connection</p>
+                            <h2>Hurray!</h2>
+                            <p style="font-size: 15px;">Your email has been verified successfully<br> Check your mail
+                                for a voting code</p>
                         </div>
                     </div>
                 </div>

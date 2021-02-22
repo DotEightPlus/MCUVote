@@ -3698,7 +3698,7 @@ input:focus {
   margin-bottom: 40px;
 }
 .footer-area .footer-pera p {
-  color: #868c98;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 50px;
   line-height: 1.8;
@@ -3707,7 +3707,7 @@ input:focus {
   padding: 0;
 }
 .footer-area .footer-tittle h4 {
-  color: #000;
+  color: #ffffff;
   font-size: 20px;
   margin-bottom: 29px;
   font-weight: 500;
@@ -3715,15 +3715,15 @@ input:focus {
   font-family: "Roboto", sans-serif;
 }
 .footer-area .footer-tittle ul li {
-  color: #012f5f;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 .footer-area .footer-tittle ul li a {
-  color: #868c98;
+  color: #ffffff;
   font-weight: 300;
 }
 .footer-area .footer-tittle ul li a:hover {
-  color: #7681b0;
+  color: yellow;
   padding-left: 5px;
 }
 .footer-copy-right {

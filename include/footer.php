@@ -1,4 +1,4 @@
-<footer>
+<footer style="background: #7681b0;">
     <!-- Footer Start-->
     <div class="footer-area footer-padding">
         <div class="container">
@@ -12,7 +12,7 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p>McU-SOMSSA Vote</p>
+                                    <p style="color: white;">McU-SOMSSA Vote</p>
                                 </div>
                             </div>
                         </div>
@@ -62,11 +62,12 @@
             <div class="row align-items-center">
                 <div class="col-xl-7 col-lg-8 col-md-7">
                     <div class="footer-copy-right">
-                        <p>
+                        <p style="color: white;">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             &copy; McU-SOMSSA <script>
                             document.write(new Date().getFullYear());
-                            </script> | Developed by <a href="https://doteightplus.com" target="_blank">DotEightPlus</a>
+                            </script> | Developed by <a href="https://doteightplus.com" target="_blank"
+                                style="color: yellow;">DotEightPlus</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

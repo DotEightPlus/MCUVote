@@ -58,47 +58,8 @@
         </div>
     </div>
     <!-- slider Area End-->
-    <!-- ? New Product Start -->
-    <section class="new-product-area section-padding30">
-        <div class="container">
-        </div>
-    </section>
-    <!--  New Product End -->
-    <!--? Gallery Area Start -->
-    <div class="gallery-area">
-        <div class="container-fluid p-0 fix">
-            <div class="row">
-                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-gallery mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(img/3.jpg);"></div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-gallery mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(img/5.jpg);"></div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-12">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img"
-                                    style="background-image: url(assets/img/gallery/gallery3.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12  col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img"
-                                    style="background-image: url(assets/img/gallery/gallery4.png);"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </div>
-    <!-- Gallery Area End -->
+
     <!--? Popular Items Start -->
     <div class="popular-items section-padding30">
         <div class="container">
@@ -106,9 +67,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8 col-md-10">
                     <div class="section-tittle mb-70 text-center">
-                        <h2>Popular Items</h2>
-                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <h2>Nominees 2021 Award Night</h2>
+                        <p>Voting Starts: | Voting Ends: </p>
                     </div>
                 </div>
             </div>
@@ -118,15 +78,13 @@
                         <div class="popular-img">
                             <img src="assets/img/gallery/popular1.png" alt="">
                             <div class="img-cap">
-                                <span>Add to cart</span>
+                                <a href="./vote#fresheroftheyear"><span>Vote Nominee</span></a>
                             </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
+
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="product_details.html">Jide Taiwo</a></h3>
+                            <span>Fresher of the Year</span>
                         </div>
                     </div>
                 </div>
@@ -135,15 +93,13 @@
                         <div class="popular-img">
                             <img src="assets/img/gallery/popular2.png" alt="">
                             <div class="img-cap">
-                                <span>Add to cart</span>
+                                <span>Vote Nominee</span>
                             </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
-                            </div>
+
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="./vote#mrcosmas">Olowo Benson</a></h3>
+                            <span>Mr COSMAS</span>
                         </div>
                     </div>
                 </div>
@@ -152,15 +108,12 @@
                         <div class="popular-img">
                             <img src="assets/img/gallery/popular3.png" alt="">
                             <div class="img-cap">
-                                <span>Add to cart</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
+                                <span>Vote Nominee</span>
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="./vote#misscosmas">Asine Aimee</a></h3>
+                            <span>Miss. COSMAS</span>
                         </div>
                     </div>
                 </div>
@@ -169,15 +122,12 @@
                         <div class="popular-img">
                             <img src="assets/img/gallery/popular4.png" alt="">
                             <div class="img-cap">
-                                <span>Add to cart</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
+                                <span>Vote Nominee</span>
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="./vote#bestpersonality">Shobowo Makinde</a></h3>
+                            <span>Best Personality (Male)</span>
                         </div>
                     </div>
                 </div>
@@ -186,15 +136,12 @@
                         <div class="popular-img">
                             <img src="assets/img/gallery/popular5.png" alt="">
                             <div class="img-cap">
-                                <span>Add to cart</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
+                                <span>Vote Nominee</span>
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="./vote#entreprenuer">Emmauel Didi</a></h3>
+                            <span>Entrepreneur for the Year (Male)</span>
                         </div>
                     </div>
                 </div>
@@ -203,15 +150,12 @@
                         <div class="popular-img">
                             <img src="assets/img/gallery/popular6.png" alt="">
                             <div class="img-cap">
-                                <span>Add to cart</span>
-                            </div>
-                            <div class="favorit-items">
-                                <span class="flaticon-heart"></span>
+                                <span>Vote Nominee</span>
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Thermo Ball Etip Gloves</a></h3>
-                            <span>$ 45,743</span>
+                            <h3><a href="./vote#sportsman">Mamu Kilode</a></h3>
+                            <span>Sportsman of the Year (Male)</span>
                         </div>
                     </div>
                 </div>
@@ -219,43 +163,30 @@
             <!-- Button -->
             <div class="row justify-content-center">
                 <div class="room-btn pt-70">
-                    <a href="catagori.html" class="btn view-btn1">View More Products</a>
+                    <a href="./vote" class="btn view-btn1">View More Nominees</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Popular Items End -->
-    <!--? Video Area Start -->
-    <div class="video-area">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="video-wrap">
-                        <div class="play-btn "><a class="popup-video"
-                                href="https://www.youtube.com/watch?v=KMc6DyEJp04"><i class="fas fa-play"></i></a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Arrow -->
-            <div class="thumb-content-box">
-                <div class="thumb-content">
-                    <h3>Next Video</h3>
-                    <a href="#"> <i class="flaticon-arrow"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Area End -->
+
     <!--? Watch Choice  Start-->
     <div class="watch-area section-padding30">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <div class="section-tittle mb-70 text-center">
+                        <h2>MCU-SOMSSA EXCOS</h2>
+                        <p>2021/2022 Academic Session</p>
+                    </div>
+                </div>
+            </div>
             <div class="row align-items-center justify-content-between padding-130">
                 <div class="col-lg-5 col-md-6">
                     <div class="watch-details mb-40">
-                        <h2>Watch of Choice</h2>
+                        <h2>Victor Oluyitan</h2>
                         <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <a href="shop.html" class="btn">Show Watches</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-10">
@@ -272,10 +203,9 @@
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="watch-details mb-40">
-                        <h2>Watch of Choice</h2>
+                        <h2>Timi Dakolo</h2>
                         <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                        <a href="shop.html" class="btn">Show Watches</a>
                     </div>
                 </div>
             </div>
