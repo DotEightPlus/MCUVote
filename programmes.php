@@ -1,34 +1,4 @@
-<?php include("include/header.php");
-
-//validate link
-if(!isset($_GET['id']) ||  $_GET['id'] == '') {
-
-    redirect("./opps");
-} else {
-
- $data = $_GET['id'];
-    
-//retrieve activator details
-$sql = "SELECT * FROM users WHERE `activator` = '$data'";
-$rsl = query($sql);
-
-if(row_count($rsl) == '') {
-   
-   redirect("./opps"); 
-} else {
-
-    //verify email
-    $ssl = "UPDATE users SET `activator` = '', `active` = '1' WHERE `activator` = '$data'";
-    $rl  = query($ssl);
-
-    if(isset($_SESSION['mail'])) {
-    unset($_SESSION['mail']); 
-    }   
-}
-
-}
-
-?>
+<?php include("include/header.php"); ?>
 <main>
     <!--? Hero Area Start-->
     <div class="slider-area ">
@@ -37,20 +7,48 @@ if(row_count($rsl) == '') {
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>Completed!</h2>
-                            <p style="font-size: 15px;">Your accreditation process has been completed successfully</p>
-                            <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
-                                <a href="./vote" class="btn hero-btn">Vote <?php echo date("Y") ?> Award
-                                    Nominees</a>
-                            </div>
+                            <h2>Programmes</h2>
+                            <p>MCU-SOMSSA &nbsp; 2021 &nbsp; Award Night Programme</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <!--? Hero Area End-->
+
+    <!-- About Details Start -->
+    <div class="about-details section-padding30">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-lg-8">
+                    <div class="about-details-cap mb-50">
+                        <h4>Day 1</h4>
+                        <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna
+                            aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor
+                            maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan
+                            lacus.
+                        </p>
+                        <p> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo
+                            viverra sebfd dho eiusmod tempor maecenas accumsan.</p>
+                    </div>
+
+                    <div class="about-details-cap mb-50">
+                        <h4>Day 2</h4>
+                        <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna
+                            aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor
+                            maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan
+                            lacus.
+                        </p>
+                        <p> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo
+                            viverra sebfd dho eiusmod tempor maecenas accumsan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Details End -->
 
 </main>
 <?php include("include/footer.php"); ?>

@@ -176,7 +176,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8 col-md-10">
                     <div class="section-tittle mb-70 text-center">
-                        <h2>MCU-SOMSSA EXCOS</h2>
+                        <h2>MCU-SOMSSA`<?php echo date("y"); ?> EXCOS</h2>
                         <p>2021/2022 Academic Session</p>
                     </div>
                 </div>

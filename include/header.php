@@ -53,15 +53,17 @@
                             <a href="./"><img style="width: 70px; height: 70px;" src="img/2.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
-                        <div class="main-menu d-none d-lg-block" style="margin-right: 250px">
+                        <div class="main-menu d-none d-lg-block" style="margin-right: 180px">
                             <nav>
                                 <ul id="navigation">
                                     <li><a href="./">Home</a></li>
-                                    <li><a href="./vote">Vote</a></li>
-                                    <li><a href="./accreditation">Accreditation</a></li>
-                                    <li><a href="./vote">Programmes</a></li>
-                                    <li><a href="./vote">Award Night</a></li>
-                                    <li><a href="./about">SOMSSA</a></li>
+                                    <li><a href="./accreditation">Accreditation`<?php echo date("y") ?> </a></li>
+                                    <li><a href="./programmes">SOMSSA`<?php echo date("y") ?></a>
+                                    </li>
+                                    <li><a href="./somssa">Attend SOMSSA`<?php echo date("y") ?></a>
+                                    </li>
+                                    <li><a href="./vote">Vote <?php echo date("Y") ?> Award
+                                            Nominees</a></li>
                                 </ul>
                             </nav>
                         </div>
