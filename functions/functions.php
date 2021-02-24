@@ -285,8 +285,8 @@ if(isset($_REQUEST['accredit'])) {
 			if($dept == "My department is not listed") {
 
 				//submit user details
-				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`, `paid`)";
-				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '$date', 'unpaid')";
+				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`, `paid`, `active`)";
+				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '$date', 'unpaid', '0')";
 				$result = query($sql);
 				
 				echo "Loading..Please wait";
@@ -296,10 +296,14 @@ if(isset($_REQUEST['accredit'])) {
 			} else {	
 	
 		//submit user details
-		$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `dept`, `gend`, `email`, `date`, `paid`)";
-		$sql.= " VALUES('1', '$matric', '$name', '$dept', '$gender', '$email', '$date', 'paid')";
+		$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `dept`, `gend`, `email`, `date`, `paid`, `active`)";
+		$sql.= " VALUES('1', '$matric', '$name', '$dept', '$gender', '$email', '$date', 'paid', '0')";
 		$result = query($sql);
 	
+
+		//launch qr code generator
+		$_SESSION['matric']  = $matric;
+		require("../QR/index.php");
 	
 		//register email
 		register($email, $matric, $name, $dept, $gender, $date);
@@ -315,6 +319,9 @@ if(isset($_REQUEST['accredit'])) {
 		//}
 		
 		function register($email, $matric, $name, $dept, $gender, $date) {
+
+		//replace matric strings
+		$pass = str_replace('/', '', $matric);	
 		
 		$to 		= $email;
 		$from 		= "noreply@mcu-somssa.com.ng";
@@ -330,6 +337,7 @@ if(isset($_REQUEST['accredit'])) {
 		$subject = "SOMSSA AWARD NIGHT";
 	
 		$logo = 'https://mcu-somssa.com.ng/img/2.png';
+		$qrco = 'https://mcu-somssa.com.ng/upload/QRCard/'.$pass.'.png';
 		$url  = 'https://mcu-somssa.com.ng';
 		$link = 'https://mcu-somssa.com.ng/./programmes';
 	
@@ -361,6 +369,7 @@ if(isset($_REQUEST['accredit'])) {
 					<td style="border: 1px solid #f9f9ff;">'.date('D, M d, Y', strtotime($date)).'</td>
 				</tr>
 			</table><br />';
+		$body .= "<img style='margin-top: 35px' src='{$qrco}' alt='QRCode'>";
 		$body .= "<p style='margin-left: 45px; padding-bottom: 80px; text-align: left;'>Do not bother replying this email. This is a virtual email</p>";	
 		$body .= "<p style='text-align: center; padding-bottom: 50px;'><b>Victor Oluyitan</b> (SOMSSA President, McU Chapter)
 		</p>";	

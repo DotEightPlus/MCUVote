@@ -181,37 +181,196 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-between padding-130">
-                <div class="col-lg-5 col-md-6">
-                    <div class="watch-details mb-40">
-                        <h2>Victor Oluyitan</h2>
-                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+            <!--? Shop Method Start-->
+            <div class="shop-method-area">
+                <div class="container">
+                    <div class="method-wrapper">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Victor Oluyitan</h6>
+                                    <p>President</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Abigeal Ayodele</h6>
+                                    <p>Vice-President</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Erioluwa Oluyombo</h6>
+                                    <p>General Secretary</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Grace Nwanna</h6>
+                                    <p>Assistant General Secretary</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-wrapper">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Ucheoma Awazie </h6>
+                                    <p>Financial Secretary</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Eniola Abiona</h6>
+                                    <p>Treasurer</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Oluwatomisin Kembi</h6>
+                                    <p>Public Relations Officer</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Favour Omomia</h6>
+                                    <p>Assistant P.R.O</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-wrapper">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Ololade Aremu</h6>
+                                    <p>Social Director
+                                    <p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Christiana Elijah </h6>
+                                    <p>Assistant Social Director</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Oluwatoke Olagunju</h6>
+                                    <p>Welfare Director</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Melody Soyemi </h6>
+                                    <p>Assistant Welfare Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-wrapper">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Pere-ere Ayayeibo</h6>
+                                    <p>Academic CoOrdinator
+                                    <p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Oluwafikunayomi
+                                        Oduguwa</h6>
+                                    <p>Assistant Academic
+                                        Co-Ordinator</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Ademola Bakare</h6>
+                                    <p>Sports Director</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Ayomide Akinmola </h6>
+                                    <p>Accounting Rep.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-wrapper">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Taiwo Ogboye</h6>
+                                    <p>Banking and Finance
+                                        Rep.
+
+                                    <p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Stephen Ikobi</h6>
+                                    <p>Business Admin Rep</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Daye-Abasi Solomon</h6>
+                                    <p>Economics Rep.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Oluwatomisin Abass </h6>
+                                    <p>International Relations
+                                        Rep</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-wrapper">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <div class="single-method mb-40">
+                                    <i class=""></i>
+                                    <h6>Motolani Ayenioye</h6>
+                                    <p>Mass Communication
+                                        Rep.
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-10">
-                    <div class="choice-watch-img mb-40">
-                        <img src="assets/img/gallery/choce_watch1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6 col-md-6 col-sm-10">
-                    <div class="choice-watch-img mb-40">
-                        <img src="assets/img/gallery/choce_watch2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="watch-details mb-40">
-                        <h2>Timi Dakolo</h2>
-                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                    </div>
-                </div>
+                <!-- Shop Method End-->
             </div>
         </div>
-    </div>
-    <!-- Watch Choice  End-->
+        <!-- Watch Choice  End-->
 
 </main>
 

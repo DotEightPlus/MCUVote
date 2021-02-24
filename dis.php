@@ -1,4 +1,8 @@
     <?php
+    //replace matric strings
+        $matric = "MTE/2018/1005";
+		$pass = str_replace('/', '', $matric);	
+
     $to 		= "";
 	$from 		= "noreply@mcu-somssa.com.ng";
 	
@@ -14,6 +18,7 @@
 
 	$logo = 'https://mcu-somssa.com.ng/img/2.png';
 	$url  = 'https://mcu-somssa.com.ng';
+    $qrco = 'https://mcu-somssa.com.ng/upload/QRCard/'.$pass.'.png';
 	$link = 'https://mcu-somssa.com.ng/./programmes';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>MCU-SOMSSA</title></head><link rel='stylesheet' href='https://mcu-somssa.com.ng/assets/css/bootstrap.min.css'><body style='text-align: center;'>";
@@ -45,6 +50,7 @@
             <td style="border: 1px solid #f9f9ff;">'.date('D, M d, Y', strtotime($date)).'</td>
         </tr>
     </table><br />';
+    $body .= "<img style='margin-top: 35px' src='{$qrco}' alt='MCU-SOMSSA'>";
     $body .= "<p style='margin-left: 45px; padding-bottom: 80px; text-align: left;'>Do not bother replying this email.
         This is a virtual email</p>";
     $body .= "<p style='text-align: center; padding-bottom: 50px;'><b>Victor Oluyitan</b> (SOMSSA President, McU
