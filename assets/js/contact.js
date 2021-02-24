@@ -22,7 +22,7 @@ $(document).ready(function () {
             required: true,
             minlength: 4,
           },
-          deptr: {
+          number: {
             required: true,
             minlength: 5,
           },
@@ -43,7 +43,7 @@ $(document).ready(function () {
             required: "come on, you have a subject, don't you?",
             minlength: "your subject must consist of at least 4 characters",
           },
-          deptr: {
+          number: {
             required: "A department is necessary.",
             minlength: "May I have your department name in full please?",
           },

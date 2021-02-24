@@ -63,6 +63,7 @@
                                         <option name="dept" id="dept">Business Administration</option>
                                         <option name="dept" id="dept">International Relations</option>
                                         <option name="dept" id="dept">Mass Communication</option>
+                                        <option name="dept" id="dept">My department is not listed</option>
                                     </select>
                                 </div>
                             </div>

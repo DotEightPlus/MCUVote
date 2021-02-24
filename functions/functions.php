@@ -97,6 +97,7 @@ function email_exist($email) {
 }
 
 
+//check if the matric exit for accreditation
 function matric_exist($matric) {
 
 	$sql = "SELECT * FROM users WHERE matric = '$matric'";
@@ -112,9 +113,29 @@ function matric_exist($matric) {
 	} 
 }
 
-function emailr_exist($email) {
 
-	$sql = "SELECT * FROM attendance WHERE email = '$email'";
+//check if the email for attendance exit
+function matricr_exist($matric) {
+
+	$sql = "SELECT * FROM attendance WHERE `matric` = '$matric' AND `paid` = 'paid'";
+	$result = query($sql);
+
+	if(row_count($result) == 1) {
+
+		return true;
+
+	}else {
+
+		return false;
+	} 
+}
+
+
+
+//check if the user has paid
+function matric_paid($matric) {
+
+	$sql = "SELECT * FROM attendance WHERE `matric` = '$matric' AND `paid` = 'unpaid'";
 	$result = query($sql);
 
 	if(row_count($result) == 1) {
@@ -240,7 +261,7 @@ if(isset($_REQUEST['accredit'])) {
 		$name 	= escape(clean($_POST['name']));
 		$email 	= escape(clean($_POST['email']));
 		$matric = escape(clean($_POST['matric']));
-		$dept	= escape(clean(ucwords($_POST['deptr'])));
+		$dept	= escape(clean($_POST['dept']));
 		$gender = escape(clean($_POST['gender']));
 		
 		
@@ -248,17 +269,24 @@ if(isset($_REQUEST['accredit'])) {
 		$date = date("d-m-y h:i:sa");
 		
 		//check if email is registered 
-		if(emailr_exist($email)) {
+		if(matricr_exist($matric)) {
 	
-			echo "Sorry! That email has been registered.";
+			echo "Sorry! That matric has been registered.";
 	
 		} else {
+
+			if(matric_paid($matric)) {
+
+				echo "Loading..Please wait";
+				echo '<script>window.location.href ="./other"</script>';
+
+			} else {
 	
-			if($dept != "Banking And Finance" || $dept != "Accounting" || $dept != "Economics" || $dept != "International Relations" || $dept != "Mass Communications" || $dept != "Business Administration") {
+			if($dept == "My department is not listed") {
 
 				//submit user details
-				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`)";
-				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '$date')";
+				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`, `paid`)";
+				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '$date', 'unpaid')";
 				$result = query($sql);
 				
 				echo "Loading..Please wait";
@@ -268,15 +296,16 @@ if(isset($_REQUEST['accredit'])) {
 			} else {	
 	
 		//submit user details
-		$sql = "INSERT INTO users(`sn`, `matric`, `name`, `dept`, `gend`, `email`, `date`)";
-		$sql.= " VALUES('1', '$matric', '$name', '$dept', '$gender', '$email', '$date')";
+		$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `dept`, `gend`, `email`, `date`, `paid`)";
+		$sql.= " VALUES('1', '$matric', '$name', '$dept', '$gender', '$email', '$date', 'paid')";
 		$result = query($sql);
 	
 	
-		//verify email
-		register($email);
+		//register email
+		register($email, $matric, $name, $dept, $gender, $date);
 				
 			}
+		}
 		}
 		
 		}
@@ -285,7 +314,7 @@ if(isset($_REQUEST['accredit'])) {
 		//redirect("./opps");
 		//}
 		
-		function register($email) {
+		function register($email, $matric, $name, $dept, $gender, $date) {
 		
 		$to 		= $email;
 		$from 		= "noreply@mcu-somssa.com.ng";
@@ -311,8 +340,27 @@ if(isset($_REQUEST['accredit'])) {
 			<br/>";
 		$body .= "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>Hi there! <br/> Your registration for MCU-SOMSSA NIGHT was processed successful.</p>
 			<br/>";
-		$body .= "<p style='margin-left: 45px; text-align: left;'><a target='_blank' href='{$link}' style='color: #fbb710; text-decoration: none; border: 1px solid black'>Click here to view the SOMSSA Week Activities</a></p>
-			<br/>";
+		$body .= "<p style='margin-left: 45px; margin-top: 14px; text-align: left; font-size: 17px;'>Kindly take a screenshot of this mail as this serves
+			as your ticket for the SOMSSA AWARD NIGHT</p>
+			<br />";
+		$body .= '<table class="text-center" style="width:90%; margin-left: 45px; color: white; border: 1px solid #f9f9ff;">
+				<tr>
+					<th style="border: 1px solid #f9f9ff;">Full Name</th>
+					<th style="border: 1px solid #f9f9ff;">Department</th>
+					<th style="border: 1px solid #f9f9ff;">Matric Number</th>
+					<th style="border: 1px solid #f9f9ff;">Gender</th>
+					<th style="border: 1px solid #f9f9ff;">Status</th>
+					<th style="border: 1px solid #f9f9ff;">Date Registered</th>
+				</tr>
+				<tr style="border: 1px solid #f9f9ff;">
+					<td style="border: 1px solid #f9f9ff;">'.$name.'</td>
+					<td style="border: 1px solid #f9f9ff;">'.$dept.'</td>
+					<td style="border: 1px solid #f9f9ff;">'.$matric.'</td>
+					<td style="border: 1px solid #f9f9ff;">'.$gender.'</td>
+					<td style="border: 1px solid #f9f9ff;">Paid</td>
+					<td style="border: 1px solid #f9f9ff;">'.date('D, M d, Y', strtotime($date)).'</td>
+				</tr>
+			</table><br />';
 		$body .= "<p style='margin-left: 45px; padding-bottom: 80px; text-align: left;'>Do not bother replying this email. This is a virtual email</p>";	
 		$body .= "<p style='text-align: center; padding-bottom: 50px;'><b>Victor Oluyitan</b> (SOMSSA President, McU Chapter)
 		</p>";	
