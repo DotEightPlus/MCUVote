@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/switchco/public_html/mcu-somssa
+    - /bin/cp -R * $DEPLOYPATH
