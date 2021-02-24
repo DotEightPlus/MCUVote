@@ -24,14 +24,12 @@
             <div class="row">
                 <div class="offset-xl-1 col-lg-8">
                     <div class="about-details-cap mb-50">
-                        <h4>Day 1</h4>
-                        <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna
-                            aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor
-                            maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan
-                            lacus.
+                        <h4>Monday</h4>
+                        <p>• Awareness/Publicity (with the use of the branded T-shirt for the entire Staff & Students)
                         </p>
-                        <p> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo
-                            viverra sebfd dho eiusmod tempor maecenas accumsan.</p>
+                        <p> • Game Night :- <b>
+                                Time: 7:00PM – 10PM</b> | <b> Venue: Multi-Purpose Hall</b>
+                        </p>
                     </div>
 
                     <div class="about-details-cap mb-50">

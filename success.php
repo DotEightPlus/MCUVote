@@ -7,10 +7,11 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>Uh Oh :(</h2>
-                            <p>Access to this resource is denied.</p>
+                            <h2>Hurray! :)</h2>
+                            <p>Your registration has been completed successfully. <br />Kindly check your email for your
+                                ticket. Make sure to take a screenshot</p>
                             <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
-                                <a href="#" onclick="goBack();" class="btn hero-btn">Go Back</a>
+                                <a href="./programmes" class="btn hero-btn">View Programmes</a>
                             </div>
                         </div>
                     </div>
