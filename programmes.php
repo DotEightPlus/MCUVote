@@ -33,14 +33,43 @@
                     </div>
 
                     <div class="about-details-cap mb-50">
-                        <h4>Day 2</h4>
-                        <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna
-                            aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor
-                            maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan
-                            lacus.
+                        <h4>Tuesday</h4>
+                        <p>• Symposium by a Guest Lecturer :- <b>Time: 10:00AM-11:30AM</b>
                         </p>
-                        <p> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo
-                            viverra sebfd dho eiusmod tempor maecenas accumsan.</p>
+                        <p> • Questions and Answers with Alumni <br /><b>Social Sciences :- Time: 12:00PM-12:45PM</b>
+                            <br /> <b>
+                                Management Sciences :- Time: 12:00PM-12:45PM
+                            </b><br />Venue: <b>Multi-Purpose Hall</b>
+                        </p>
+                    </div>
+
+                    <div class="about-details-cap mb-50">
+                        <h4>Wednessday</h4>
+                        <p>• Sports (Indoor and Outdoor Events :- <b> Time: 12:00 PM-5:00PM <br />Venue: Sport
+                                Complex/Multi-Purpose Hall</b>
+                        </p>
+                        <p> • Movie Night <br /><b> Time: 7:00PM-9:00PM</b>
+
+                        </p>
+                    </div>
+
+                    <div class="about-details-cap mb-50">
+                        <h4>Thursday</h4>
+                        <p>• Trade Fair & Exhibition - <b> ‘STUDENTPRENEURSHIP: ENCOURAGING ACADEMICS & CRAFT’
+                                <br />Time: 11:00AM-3:00PM</b> <br /><b> Venue: Open field opposite COSMAS building</b>
+                        </p>
+                        <p> • Bonfire <br /><b> Time: 7:00PM – 10:00PM</b>
+
+                        </p>
+                    </div>
+
+                    <div class="about-details-cap mb-50">
+                        <h4>Friday</h4>
+                        <p>• Dinner/Award Night :- <b> Time: 8:00PM-11:45PM </b>
+                        </p>
+                        <p> • Recognition/Commendation of all Executives
+
+                        </p>
                     </div>
                 </div>
             </div>
