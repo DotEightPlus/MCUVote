@@ -2,7 +2,6 @@
 //creating the database to use
 $con = mysqli_connect("us-cdbr-east-03.cleardb.com","b529930c9ce973","93582d39","heroku_e3d17fc5a7a9db3");
 //$con = mysqli_connect("localhost","root","","mcu");
-//$con = mysqli_connect("localhost","switchco_mcu","securemelikekilode","switchco_mcu");
 
 function row_count($result) {
 
