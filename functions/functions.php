@@ -256,7 +256,6 @@ if(isset($_REQUEST['accredit'])) {
 		//if ($_SERVER["REQUEST_METHOD"] != "POST") {
 		
 		
-		
 		//get user details
 		$name 	= escape(clean($_POST['name']));
 		$email 	= escape(clean($_POST['email']));
@@ -266,7 +265,7 @@ if(isset($_REQUEST['accredit'])) {
 		
 		
 		//date registered
-		$date = date("d-m-y h:i:sa");
+		$date = date("d-m-y");
 		
 		//check if email is registered 
 		if(matricr_exist($matric)) {
@@ -286,7 +285,7 @@ if(isset($_REQUEST['accredit'])) {
 
 				//submit user details
 				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`, `paid`, `active`)";
-				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '$date', 'unpaid', '0')";
+				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '', 'unpaid', '0')";
 				$result = query($sql);
 				
 				echo "Loading..Please wait";
@@ -369,7 +368,7 @@ if(isset($_REQUEST['accredit'])) {
 					<td style="border: 1px solid #f9f9ff;">'.date('D, M d, Y', strtotime($date)).'</td>
 				</tr>
 			</table><br />';
-		$body .= "<img style='margin-top: 35px' src='{$qrco}' alt='QRCode'>";
+		$body .= "<img style='margin-top: 35px; margin-bottom: 10px;' src='{$qrco}' alt='QRCode'>";
 		$body .= "<p style='margin-left: 45px; padding-bottom: 80px; text-align: left;'>Do not bother replying this email. This is a virtual email</p>";	
 		$body .= "<p style='text-align: center; padding-bottom: 50px;'><b>Victor Oluyitan</b> (SOMSSA President, McU Chapter)
 		</p>";	
@@ -379,6 +378,6 @@ if(isset($_REQUEST['accredit'])) {
 		$send = mail($to, $subject, $body, $headers);
 	
 		echo "Loading...Please wait!";												
-		echo '<script>window.location.href ="./success"</script>';
+		//echo '<script>window.location.href ="./success"</script>';
 		}
 ?>
