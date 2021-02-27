@@ -270,7 +270,7 @@ if(isset($_REQUEST['accredit'])) {
 		//check if email is registered 
 		if(matricr_exist($matric)) {
 	
-			echo "Sorry! That matric has been registered.";
+			echo "Sorry! You`ve been registered <br> You can`t register more than once.";
 	
 		} else {
 
@@ -378,6 +378,6 @@ if(isset($_REQUEST['accredit'])) {
 		$send = mail($to, $subject, $body, $headers);
 	
 		echo "Loading...Please wait!";												
-		//echo '<script>window.location.href ="./success"</script>';
+		echo '<script>window.location.href ="./success"</script>';
 		}
 ?>
