@@ -12,7 +12,7 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p style="color: white;">McU-SOMSSA Vote</p>
+                                    <p style="color: white;">McU-SOMSSA</p>
                                 </div>
                             </div>
                         </div>

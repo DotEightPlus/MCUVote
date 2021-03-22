@@ -197,7 +197,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">
                                     <i class=""></i>
-                                    <h6>Abigeal Ayodele</h6>
+                                    <h6>Abigael Ayodele</h6>
                                     <p>Vice-President</p>
                                 </div>
                             </div>

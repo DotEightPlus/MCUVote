@@ -1,4 +1,16 @@
-<?php include("include/header.php"); ?>
+<?php include("include/header.php");
+
+if(!isset($_GET['trn']) || $_GET['trn'] == null) {
+ redirect("./payerror");
+ 
+} else {
+
+    $data = $_GET['trn'];
+
+    other_reg();
+}
+
+?>
 <main>
     <!--? Hero Area Start-->
     <div class="slider-area ">

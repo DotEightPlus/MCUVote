@@ -283,13 +283,15 @@ if(isset($_REQUEST['accredit'])) {
 	
 			if($dept == "My department is not listed") {
 
+				$tranref        = md5($email);
+
 				//submit user details
-				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`, `paid`, `active`)";
-				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '', 'unpaid', '0')";
+				$sql = "INSERT INTO attendance(`sn`, `matric`, `name`, `gend`, `email`, `date`, `paid`, `active`, `dept`)";
+				$sql.= " VALUES('1', '$matric', '$name', '$gender', '$email', '', 'unpaid', '0', '$tranref')";
 				$result = query($sql);
 				
 				echo "Loading..Please wait";
-				echo '<script>window.location.href ="./other"</script>';
+				echo '<script>window.location.href ="./other?youid='.$email.'&trn='.$tranref.'"</script>';
 				
 	
 			} else {	

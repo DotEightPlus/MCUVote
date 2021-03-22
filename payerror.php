@@ -7,11 +7,11 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>Hurray!</h2>
-                            <p>Your registration has been completed successfully. <br />Kindly check your email for your
-                                ticket. Make sure to take a screenshot</p>
+                            <h2>Ouch :(</h2>
+                            <p>Your payment was not successful <br />Kindly check your internet connection and try
+                                again!</p>
                             <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
-                                <a href="./programmes" class="btn hero-btn">View Programmes</a>
+                                <a href="./somssa" class="btn hero-btn">Try again</a>
                             </div>
                         </div>
                     </div>

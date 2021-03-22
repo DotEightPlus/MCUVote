@@ -45,7 +45,8 @@
 
                     <div class="about-details-cap mb-50">
                         <h4>Wednessday</h4>
-                        <p>• Sports (Indoor and Outdoor Events :- <b> Time: 12:00 PM-5:00PM <br />Venue: Sport
+                        <p>• Sports (Indoor and Outdoor Events :- <b> Time: 12:00 PM-5:00PM
+                                <br />Venue: Sport
                                 Complex/Multi-Purpose Hall</b>
                         </p>
                         <p> • Movie Night <br /><b> Time: 7:00PM-9:00PM</b>
