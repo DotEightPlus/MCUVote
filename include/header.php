@@ -57,13 +57,13 @@
                             <nav>
                                 <ul id="navigation">
                                     <li><a href="./">Home</a></li>
-                                    <li><a href="./accreditation">Accreditation`<?php echo date("y") ?> </a></li>
                                     <li><a href="./programmes">SOMSSA`<?php echo date("y") ?></a>
+                                    </li>
+                                    <li><a href="./excos">SOMSSA Excos' <?php echo date("y") ?></a>
                                     </li>
                                     <li><a href="./somssa">Attend SOMSSA`<?php echo date("y") ?></a>
                                     </li>
-                                    <li><a href="./vote">Vote <?php echo date("Y") ?> Award
-                                            Nominees</a></li>
+                                    <li><a href="./vote">Vote <?php echo date("Y") ?> Nominees</a></li>
                                 </ul>
                             </nav>
                         </div>
