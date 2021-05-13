@@ -35,7 +35,7 @@
             <!--? Shop Method Start-->
             <div class="shop-method-area">
                 <div class="container">
-                    <div class="method-wrapper">
+                    <div style="background: #7681b0;" class="method-wrapper">
                         <div class="row d-flex justify-content-between">
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="method-wrapper">
+                    <div style="background: #7681b0;" class="method-wrapper">
                         <div class="row d-flex justify-content-between">
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="method-wrapper">
+                    <div style="background: #7681b0;" class="method-wrapper">
                         <div class="row d-flex justify-content-between">
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="method-wrapper">
+                    <div style="background: #7681b0;" class="method-wrapper">
                         <div class="row d-flex justify-content-between">
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="method-wrapper">
+                    <div style="background: #7681b0;" class="method-wrapper">
                         <div class="row d-flex justify-content-between">
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">
@@ -203,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="method-wrapper">
+                    <div style="background: #7681b0;" class="method-wrapper">
                         <div class="row d-flex justify-content-between">
                             <div class="col-xl-3 col-lg-3 col-md-12">
                                 <div class="single-method mb-40">

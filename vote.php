@@ -22,165 +22,289 @@
 
 
             <?php
-    if(!isset($_SESSION['matric'])) {
+    if(!isset($_SESSION['usermatric'])) {
        
 
         ?>
 
-            <div class="col-12">
-                <h4 class="contact-title text-center">Ouch! Your details aren`t registered.
-                </h4>
-            </div>
-            <div class="col-lg-12">
-                <form class="form-contact contact_form" action="./accredit" method="post" id="contactForm"
-                    novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control valid" name="name" id="name" type="text"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your full name'"
-                                    placeholder="Enter your full name">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title text-center">Let`s get you accredited</h2>
+                </div>
+                <div class="col-lg-12">
+                    <form class="form-contact contact_form" action="./accredit" method="post" id="contactForm"
+                        novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter your full name'"
+                                        placeholder="Enter your full name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control valid" name="email" id="email" type="email"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
-                                    placeholder="Email">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <input class="form-control valid" name="matric" id="matric" type="text"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Matric Number'"
-                                    placeholder="Matric Number">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="matric" id="matric" type="text"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Matric Number'"
+                                        placeholder="Matric Number">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-sm-4">
-                            <div class="form-select form-group">
-                                <select name="dept" id="dept">
-                                    <option name="dept" id="dept">Accounting</option>
-                                    <option name="dept" id="dept">Banking and Finance</option>
-                                    <option name="dept" id="dept">Economics</option>
-                                    <option name="dept" id="dept">Business Administration</option>
-                                    <option name="dept" id="dept">International Relations</option>
-                                    <option name="dept" id="dept">Mass Communication</option>
-                                    <option name="dept" id="dept">My department is not listed</option>fd
-                                </select>
+                            <div class="col-sm-4">
+                                <div class="form-select form-group">
+                                    <select name="dept" id="dept">
+                                        <option name="dept" id="dept">Accounting</option>
+                                        <option name="dept" id="dept">Banking and Finance</option>
+                                        <option name="dept" id="dept">Economics</option>
+                                        <option name="dept" id="dept">Business Administration</option>
+                                        <option name="dept" id="dept">International Relations</option>
+                                        <option name="dept" id="dept">Mass Communication</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-sm-4">
-                            <div class="form-select form-group">
-                                <select name="gender" id="gender">
-                                    <option name="gender" id="gender">Male</option>
-                                    <option name="gender" id="gender">Female</option>
-                                </select>
+                            <div class="col-sm-4">
+                                <div class="form-select form-group">
+                                    <select name="gender" id="gender">
+                                        <option name="gender" id="gender">Male</option>
+                                        <option name="gender" id="gender">Female</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <div class="form-group mt-3">
-                        <p>Your details aren`t saved. The magic happens right here on your browser. We respect your
-                            privacy</p>
-                        <button type="submit" name="register" class="button button-contactForm boxed-btn">Register
-                            Me</button>
-                    </div>
-                </form>
+                        </div>
+                        <div class="form-group mt-3">
+                            <p>Your details aren`t saved. The magic happens right here on your browser. We respect your
+                                privacy</p>
+                            <button type="submit" name="accredit" class="button button-contactForm boxed-btn">Submit
+                                Details</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
 
 
             <?php
         
     } else {
-
-        
-    }
-
 ?>
 
-            <div class="cart_inner">
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="assets/img/gallery/card1.png" alt="" />
-                                        </div>
-                                        <div class="media-body">
-                                            <p>Minimalistic shop for multipurpose use</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$360.00</h5>
-                                </td>
-                                <td>
-                                    <div class="product_count">
-                                        <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                                        <input class="input-number" type="text" value="1" min="0" max="10">
-                                        <span class="input-number-increment"> <i class="ti-plus"></i></span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$720.00</h5>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="assets/img/gallery/card2.png" alt="" />
-                                        </div>
-                                        <div class="media-body">
-                                            <p>Minimalistic shop for multipurpose use</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$360.00</h5>
-                                </td>
-                                <td>
-                                    <div class="product_count">
-                                        <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                                        <input class="input-number" type="text" value="1" min="0" max="10">
-                                        <span class="input-number-increment"> <i class="ti-plus"></i></span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$720.00</h5>
-                                </td>
-                            </tr>
-                            <tr class="bottom_button">
-                                <td>
-                                    <a class="btn_1" href="#">Update Cart</a>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <div class="cupon_text float-right">
-                                        <a class="btn_1" href="#">Close Coupon</a>
-                                    </div>
-                                </td>
-                            </tr>
+            <div id="accordion">
+                <div class="card">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <div style="background: #7681b0;" class="card-header">
+                            <b style="color: #ffffff;">FRESHER OF THE YEAR</b>
+                        </div>
+                    </a>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="cart_inner">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="color: black;" scope="col">Name</th>
+                                                <th style="color: black;" scope="col">Level</th>
+                                                <th style="color: black;" scope="col">Rate</th>
+                                                <th style="color: black;" scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <p>Male Category</p>
+                                                <td>
+                                                    <p style="color: black;"><b>Ajibade Adeife</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td>
+
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
 
 
-                        </tbody>
-                    </table>
+                                            <tr>
+                                                <td>
+                                                    <p style="color: black;"><b>Ajibade Adeife</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td>
 
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="color: black;" scope="col">Name</th>
+                                                <th style="color: black;" scope="col">Level</th>
+                                                <th style="color: black;" scope="col">Rate</th>
+                                                <th style="color: black;" scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <p>Female Category</p>
+                                                <td>
+                                                    <p style="color: black;"><b>George Ibukun</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td>
+
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <p style="color: black;"><b>Folaji Phoebe</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td>
+
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+            <div id="accordion">
+                <div class="card">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        <div style="background: #7681b0;" class="card-header">
+                            <b style="color: #ffffff;">Mr. COSMAS</b>
+                        </div>
+                    </a>
+                    <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="cart_inner">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="color: black;" scope="col">Name</th>
+                                                <th style="color: black;" scope="col">Level</th>
+                                                <th style="color: black;" scope="col">Rate</th>
+                                                <th style="color: black;" scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p style="color: black;"><b>Adeleye Korede</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">200 Level</h5>
+                                                </td>
+                                                <td>
+
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <p style="color: black;"><b>Akinmola Ayomide</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">200 Level</h5>
+                                                </td>
+                                                <td>
+
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <p style="color: black;"><b>Opara David</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">200 Level</h5>
+                                                </td>
+                                                <td>
+
+                                                <td>
+                                                    <a style="padding: 17px 10px; background: #7681b0; color: white;"
+                                                        class="btn_1" href="#">Vote</a>
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <?php
+        }
+        ?>
     </section>
     <!--================End Cart Area =================-->
 </main>

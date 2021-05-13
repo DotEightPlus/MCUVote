@@ -64,7 +64,7 @@
 
 </main>
 
-
+<?php include("include/footer.php"); ?>
 
 <!-- JS here -->
 
