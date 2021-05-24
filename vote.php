@@ -103,12 +103,18 @@
         
     } else {
 ?>
-
+            <?php 
+            $pass = $_SESSION['activator']; 
+             ?>
+            
+            <p id="pass"> <?php echo $pass; ?> </p>
             <div id="accordion">
                 <div class="card">
                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
                         <div style="background: #7681b0;" class="card-header">
                             <b style="color: #ffffff;" id="fresher">Fresher of the Year</b>
+                            <p id="fresher" hidden>Fresher of the Year</p>
+
                         </div>
                     </a>
                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -130,18 +136,29 @@
                                                     $sql = "SELECT * FROM `votes`";
                                                     $res = query($sql);
                                                     $row = mysqli_fetch_array($res);
-                                                ?>
+
+                                                    $sqll = "SELECT * FROM `secure`";
+                                                    $resl = query($sqll);
+                                                    $rows = mysqli_fetch_array($resl);
+
+                                                 ?>
+
 
                                                 <p>Male Category</p>
                                                 <td>
-                                                    <p id="Ajibade" style="color: black;"><b>Ajibade Adeife</b></p>
+                                                    <p id="ajibade" style="color: black;"><b>Ajibade Adeife</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">100 Level</h5>
                                                 </td>
-                                               
+
                                                 <td>
-                                                    <?php echo $row['ip']; ?>
+                                                   <?php 
+                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade' AND `category` = 'fresh_male'";
+                                                    $res = query($sql);
+                                                    $row = mysqli_fetch_array($res);
+                                                    echo $row['votes'];  
+                                                    ?> 
                                                 </td>
                                                 <td>
                                                     <?php

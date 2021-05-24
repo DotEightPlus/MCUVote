@@ -178,13 +178,18 @@ if (isset($_POST['a']) && ($_POST['b'])) {
 	
 	$a =	$_POST['a'];
 	$b =	$_POST['b'];
+	$pass = $_POST['c'];
 
-	$sql = "SELECT * FROM `votes` WHERE `category` == '$b'";
+	$sqll = "INSERT INTO secure(`ip`, `category`)";
+	$sqll.= "VALUES('$c', '$pass')";
+	$ressult = query($sqll);
+
+	$sql = "SELECT * FROM `votes` WHERE `category` = '$b' AND `a` LIKE `a` ";
 	$res = query($sql);
 	$row = mysqli_fetch_array($res);
 
 	$c = $row['vote'];
-	$d = $a + 1;
+	$d = $c + 1;
 
 	//update vote
 	$sq = "UPDATE votes SET `votes` = '$d'";
