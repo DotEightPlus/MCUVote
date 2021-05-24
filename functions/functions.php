@@ -132,7 +132,8 @@ if(isset($_REQUEST['accredit'])) {
 	
 	//generate activator
 	$activator = $_SERVER['REMOTE_ADDR'];
-	
+	$_SESSION['activator'] = $activator;
+
 	//date registered
 	$date = date("d-m-y h:i:sa");
 	
@@ -169,4 +170,29 @@ if(isset($_REQUEST['accredit'])) {
 	}
 	
 	}
+
+
+
+
+if (isset($_POST['a']) && ($_POST['b'])) {
+	
+	$a =	$_POST['a'];
+	$b =	$_POST['b'];
+
+	$sql = "SELECT * FROM `votes` WHERE `category` == '$b'";
+	$res = query($sql);
+	$row = mysqli_fetch_array($res);
+
+	$c = $row['vote'];
+	$d = $a + 1;
+
+	//update vote
+	$sq = "UPDATE votes SET `votes` = '$d'";
+	$rsult = query($sq);
+	confirm($rsult);
+
+}
 ?>
+
+
+
