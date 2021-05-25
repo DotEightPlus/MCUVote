@@ -115,6 +115,22 @@ function matric_exist($matric) {
 
 
 
+//check vote process for ip and matric + accrediatation
+function checkipmatval($category, $ipaddr, $mat) {
+
+	$sql = "SELECT * FROM secure WHERE `matric` = '$mat' AND `ip` = '$ipaddr' AND `category` = '$category'";
+	$res = query($sql);
+
+	if (row_count($res) == 1) {
+		
+		return true;
+	} else {
+
+		return false;
+	}
+}
+
+
 //on submit button click
 if(isset($_REQUEST['accredit'])) {
 
@@ -174,28 +190,103 @@ if(isset($_REQUEST['accredit'])) {
 
 
 
-if (isset($_POST['a']) && ($_POST['b'])) {
+if (isset($_POST['a']) && isset($_POST['b'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['a'];
+	$category = $_POST['b'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    echo $voted;
+    $_SESSION['voted'] = $voted;
+}
 	
-	$a =	$_POST['a'];
-	$b =	$_POST['b'];
-	$pass = $_POST['c'];
+}
+}
 
-	$sqll = "INSERT INTO secure(`ip`, `category`)";
-	$sqll.= "VALUES('$c', '$pass')";
-	$ressult = query($sqll);
 
-	$sql = "SELECT * FROM `votes` WHERE `category` = '$b' AND `a` LIKE `a` ";
-	$res = query($sql);
-	$row = mysqli_fetch_array($res);
 
-	$c = $row['vote'];
-	$d = $c + 1;
 
-	//update vote
-	$sq = "UPDATE votes SET `votes` = '$d'";
-	$rsult = query($sq);
-	confirm($rsult);
+if (isset($_POST['aa']) && isset($_POST['b'])) {
 
+	//declare variables
+
+	$nomname  = $_POST['aa'];
+	$category = $_POST['bb'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    echo $voted;
+    $_SESSION['voteda'] = $voted;
+}
+	
+}
 }
 ?>
 

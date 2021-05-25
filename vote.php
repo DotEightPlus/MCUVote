@@ -3,6 +3,11 @@
     button {
 
         cursor: pointer;
+        padding: 17px 10px;
+        background: #7681b0;
+        color: white;
+        border-radius: 10px;
+        border: none;
     }
 </style>
 <main>
@@ -103,12 +108,7 @@
         
     } else {
 ?>
-            <?php 
-            $pass = $_SESSION['activator']; 
-             ?>
-            
-            <p id="pass"> <?php echo $pass; ?> </p>
-            <div id="accordion">
+              <div id="accordion">
                 <div class="card">
                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
                         <div style="background: #7681b0;" class="card-header">
@@ -132,18 +132,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                 <?php
-                                                    $sql = "SELECT * FROM `votes`";
-                                                    $res = query($sql);
-                                                    $row = mysqli_fetch_array($res);
-
-                                                    $sqll = "SELECT * FROM `secure`";
-                                                    $resl = query($sqll);
-                                                    $rows = mysqli_fetch_array($resl);
-
-                                                 ?>
-
-
+                                                
                                                 <p>Male Category</p>
                                                 <td>
                                                     <p id="ajibade" style="color: black;"><b>Ajibade Adeife</b></p>
@@ -152,25 +141,15 @@
                                                     <h5 style="color: black;">100 Level</h5>
                                                 </td>
 
-                                                <td>
+                                                <td id="rate">
                                                    <?php 
-                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade' AND `category` = 'fresh_male'";
-                                                    $res = query($sql);
-                                                    $row = mysqli_fetch_array($res);
-                                                    echo $row['votes'];  
-                                                    ?> 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade Adeife' AND `category` LIKE 'fresh_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
                                                 </td>
                                                 <td>
-                                                    <?php
-                                                    if(isset($_SESSION['activator']) && ($_SESSION['activator'] === $row['ip'])) {
-                                                
-                                                    echo "<button style='padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px' id='fresher1' hidden>Vote</button>";
-                                                }else{
-
-                                                    echo "<button style='padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px' id='fresher1'   >Vote</button>";
-                                                }
-                                               
-                                                ?>
+                                                    <button id='fresher1'>Vote</button>
                                                 </td>
                                             </tr>
 
@@ -182,19 +161,14 @@
                                                 <td>
                                                     <h5 style="color: black;">100 Level</h5>
                                                 </td>
+                                                <td id="ratea">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Olamilekan' AND `category` LIKE 'fresh_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
                                                 <td>
-
-                                                <td>
-                                                   <?php
-                                                    if(isset($_SESSION['activator']) && ($_SESSION['activator'] === $row['ip'])) {
-                                                
-                                                    echo "<button style='padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px' id='fresher1' onclick='fresher()' hidden>Vote</button>";
-                                                }else{
-                                                    
-                                                    echo "<button style='padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px' id='fresher1' onclick='fresher()'  >Vote</button>";
-                                                }
-                                               
-                                                ?>
+                                                  <button id='fresher2'>Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1305,202 +1279,6 @@
 </div>
 
 
-<!-- <script>
-    function fresher() {
-        document.getElementById('fresher1').disabled = true;
-        document.getElementById('fresher1').style.background = 'grey';
-        document.getElementById('fresher1').style.clor = 'black';
-        document.getElementById('fresher2').disabled = true;
-        document.getElementById('fresher2').style.background = 'grey';
-        document.getElementById('fresher2').style.clor = 'black';
-    }
-
-    function freshers() {
-        document.getElementById('freshers1').disabled = true;
-        document.getElementById('freshers1').style.background = 'grey';
-        document.getElementById('freshers1').style.clor = 'black';
-        document.getElementById('freshers2').disabled = true;
-        document.getElementById('freshers2').style.background = 'grey';
-        document.getElementById('freshers2').style.clor = 'black';
-    }
-
-    function mr() {
-        document.getElementById('mr1').disabled = true;
-        document.getElementById('mr1').style.background = 'grey';
-        document.getElementById('mr1').style.clor = 'black';
-        document.getElementById('mr2').disabled = true;
-        document.getElementById('mr2').style.background = 'grey';
-        document.getElementById('mr2').style.clor = 'black';
-        document.getElementById('mr3').disabled = true;
-        document.getElementById('mr3').style.background = 'grey';
-        document.getElementById('mr3').style.clor = 'black';
-        document.getElementById('mr4').disabled = true;
-        document.getElementById('mr4').style.background = 'grey';
-        document.getElementById('mr4').style.clor = 'black';
-        document.getElementById('mr5').disabled = true;
-        document.getElementById('mr5').style.background = 'grey';
-        document.getElementById('mr5').style.clor = 'black';
-        document.getElementById('mr6').disabled = true;
-        document.getElementById('mr6').style.background = 'grey';
-        document.getElementById('mr6').style.clor = 'black';
-    }
-    
-    function miss() {
-        document.getElementById('miss1').disabled = true;
-        document.getElementById('miss1').style.background = 'grey';
-        document.getElementById('miss1').style.clor = 'black';
-        document.getElementById('miss2').disabled = true;
-        document.getElementById('miss2').style.background = 'grey';
-        document.getElementById('miss2').style.clor = 'black';
-        document.getElementById('miss3').disabled = true;
-        document.getElementById('miss3').style.background = 'grey';
-        document.getElementById('miss3').style.clor = 'black';
-        document.getElementById('miss4').disabled = true;
-        document.getElementById('miss4').style.background = 'grey';
-        document.getElementById('miss4').style.clor = 'black';
-        document.getElementById('miss5').disabled = true;
-        document.getElementById('miss5').style.background = 'grey';
-        document.getElementById('miss5').style.clor = 'black';
-        document.getElementById('miss6').disabled = true;
-        document.getElementById('miss6').style.background = 'grey';
-        document.getElementById('miss6').style.clor = 'black';
-    }
-
-    function personMale() {
-        document.getElementById('personMale1').disabled = true;
-        document.getElementById('personMale1').style.background = 'grey';
-        document.getElementById('personMale1').style.clor = 'black';
-        document.getElementById('personMale2').disabled = true;
-        document.getElementById('personMale2').style.background = 'grey';
-        document.getElementById('personMale2').style.clor = 'black';
-    }
-
-    function personFemale() {
-        document.getElementById('personFemale1').disabled = true;
-        document.getElementById('personFemale1').style.background = 'grey';
-        document.getElementById('personFemale1').style.clor = 'black';
-        document.getElementById('personFemale2').disabled = true;
-        document.getElementById('personFemale2').style.background = 'grey';
-        document.getElementById('personFemale2').style.clor = 'black';
-    }
-
-    function EntreMale() {
-        document.getElementById('EntreMale1').disabled = true;
-        document.getElementById('EntreMale1').style.background = 'grey';
-        document.getElementById('EntreMale1').style.clor = 'black';
-        document.getElementById('EntreMale2').disabled = true;
-        document.getElementById('EntreMale2').style.background = 'grey';
-        document.getElementById('EntreMale2').style.clor = 'black';
-        document.getElementById('EntreMale3').disabled = true;
-        document.getElementById('EntreMale3').style.background = 'grey';
-        document.getElementById('EntreMale3').style.clor = 'black';
-        document.getElementById('EntreMale4').disabled = true;
-        document.getElementById('EntreMale4').style.background = 'grey';
-        document.getElementById('EntreMale4').style.clor = 'black';
-        document.getElementById('EntreMale5').disabled = true;
-        document.getElementById('EntreMale5').style.background = 'grey';
-        document.getElementById('EntreMale5').style.clor = 'black';
-    }
-
-    function EntreFemale() {
-        document.getElementById('EntreFemale1').disabled = true;
-        document.getElementById('EntreFemale1').style.background = 'grey';
-        document.getElementById('EntreFemale1').style.clor = 'black';
-        document.getElementById('EntreFemale2').disabled = true;
-        document.getElementById('EntreFemale2').style.background = 'grey';
-        document.getElementById('EntreFemale2').style.clor = 'black';
-        document.getElementById('EntreFemale3').disabled = true;
-        document.getElementById('EntreFemale3').style.background = 'grey';
-        document.getElementById('EntreFemale3').style.clor = 'black';
-        document.getElementById('EntreFemale4').disabled = true;
-        document.getElementById('EntreFemale4').style.background = 'grey';
-        document.getElementById('EntreFemale4').style.clor = 'black';
-        document.getElementById('EntreFemale5').disabled = true;
-        document.getElementById('EntreFemale5').style.background = 'grey';
-        document.getElementById('EntreFemale5').style.clor = 'black';
-
-    }
-
-    function SportMale() {
-        document.getElementById('SportMale1').disabled = true;
-        document.getElementById('SportMale1').style.background = 'grey';
-        document.getElementById('SportMale1').style.clor = 'black';
-        document.getElementById('SportMale2').disabled = true;
-        document.getElementById('SportMale2').style.background = 'grey';
-        document.getElementById('SportMale2').style.clor = 'black';
-        document.getElementById('SportMale3').disabled = true;
-        document.getElementById('SportMale3').style.background = 'grey';
-        document.getElementById('SportMale3').style.clor = 'black';
-        document.getElementById('SportMale4').disabled = true;
-        document.getElementById('SportMale4').style.background = 'grey';
-        document.getElementById('SportMale4').style.clor = 'black';
-        document.getElementById('SportMale5').disabled = true;
-        document.getElementById('SportMale5').style.background = 'grey';
-        document.getElementById('SportMale5').style.clor = 'black';
-    }
-
-    function SportFemale() {
-        document.getElementById('SportMale1').disabled = true;
-        document.getElementById('SportMale1').style.background = 'grey';
-        document.getElementById('SportMale1').style.clor = 'black';
-        document.getElementById('SportMale2').disabled = true;
-        document.getElementById('SportMale2').style.background = 'grey';
-        document.getElementById('SportMale2').style.clor = 'black';
-        document.getElementById('SportMale3').disabled = true;
-        document.getElementById('SportMale3').style.background = 'grey';
-        document.getElementById('SportMale3').style.clor = 'black';
-        document.getElementById('SportMale4').disabled = true;
-        document.getElementById('SportMale4').style.background = 'grey';
-        document.getElementById('SportMale4').style.clor = 'black';
-        document.getElementById('SportMale5').disabled = true;
-        document.getElementById('SportMale5').style.background = 'grey';
-        document.getElementById('SportMale5').style.clor = 'black';
-    }
-
-    function dressMale() {
-        document.getElementById('dressMale1').disabled = true;
-        document.getElementById('dressMale1').style.background = 'grey';
-        document.getElementById('dressMale1').style.clor = 'black';
-        document.getElementById('dressMale2').disabled = true;
-        document.getElementById('dressMale2').style.background = 'grey';
-        document.getElementById('dressMale2').style.clor = 'black';
-        document.getElementById('dressMale3').disabled = true;
-        document.getElementById('dressMale3').style.background = 'grey';
-        document.getElementById('dressMale3').style.clor = 'black';
-        document.getElementById('dressMale4').disabled = true;
-        document.getElementById('dressMale4').style.background = 'grey';
-        document.getElementById('dressMale4').style.clor = 'black';
-        document.getElementById('dressMale5').disabled = true;
-        document.getElementById('dressMale5').style.background = 'grey';
-        document.getElementById('dressMale5').style.clor = 'black';
-        document.getElementById('dressMale6').disabled = true;
-        document.getElementById('dressMale6').style.background = 'grey';
-        document.getElementById('dressMale6').style.clor = 'black';
-
- }
-    function dressFemale() {
-        document.getElementById('dressFemale1').disabled = true;
-        document.getElementById('dressFemale1').style.background = 'grey';
-        document.getElementById('dressFemale1').style.clor = 'black';
-        document.getElementById('dressFemale2').disabled = true;
-        document.getElementById('dressFemale2').style.background = 'grey';
-        document.getElementById('dressFemale2').style.clor = 'black';
-        document.getElementById('dressFemale3').disabled = true;
-        document.getElementById('dressFemale3').style.background = 'grey';
-        document.getElementById('dressFemale3').style.clor = 'black';
-        document.getElementById('dressFemale4').disabled = true;
-        document.getElementById('dressFemale4').style.background = 'grey';
-        document.getElementById('dressFemale4').style.clor = 'black';
-        document.getElementById('dressFemale5').disabled = true;
-        document.getElementById('dressFemale5').style.background = 'grey';
-        document.getElementById('dressFemale5').style.clor = 'black';
-        document.getElementById('dressFemale6').disabled = true;
-        document.getElementById('dressFemale6').style.background = 'grey';
-        document.getElementById('dressFemale6').style.clor = 'black';
-    }
-    
-</script> -->
-
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
 <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -1535,6 +1313,31 @@
 <script src="./assets/js/main.js"></script>
 <script src="ajax.js"></script>
 <script src="aja.js"></script>
+
+<?php
+
+//disable button for fresher category
+if(isset($_SESSION['voted'])) {
+
+    echo "
+        <script>
+    document.getElementById('fresher1').style.visibility = 'hidden';
+    document.getElementById('fresher2').style.visibility = 'hidden';
+    </script>
+    ";
+}
+
+
+if(isset($_SESSION['voteda'])) {
+
+    echo "
+        <script>
+    document.getElementById('fresher1').style.visibility = 'hidden';
+    document.getElementById('fresher2').style.visibility = 'hidden';
+    </script>
+    ";
+}
+?>
 
 </body>
 
