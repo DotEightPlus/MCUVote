@@ -215,7 +215,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <p id="folaji" style="color: black;"><b>Folaji Phoebe</b></p>
+                                                    <p id="folajip" style="color: black;"><b>Folaji Phoebe</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">100 Level</h5>
@@ -593,32 +593,42 @@
                                         <tbody>
                                             <tr>
                                                 <p>Male Category</p>
-                                                <td>
+                                                <td id="oluyombo">
                                                     <p style="color: black;"><b>Oluyombo Erioluwa</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
-                                                    <?php echo "string"; ?>
+                                                <td id="ratep">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oluyombo Erioluwa' AND `category` LIKE 'maleperson'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
                                                 </td>
                                                 <td>
-                                                   <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="personMale1" onclick="personMale()">Vote</button>
+                                                   <button id="personMale1">Vote</button>
                                                 </td>
                                             </tr>
 
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Oladapo Tioluwani</b></p>
+                                                    <p id="oladapo" style="color: black;"><b>Oladapo Tioluwani</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateq">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladapo Tioluwani' AND `category` LIKE 'maleperson'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="personMale2" onclick="personMale()">Vote</button>
+                                                    <button id="personMale2">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -643,15 +653,21 @@
                                             <tr>
                                                 <p>Female Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Abiona Eniola</b></p>
+                                                    <p id="abiona" style="color: black;"><b>Abiona Eniola</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rater">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Abiona Eniola' AND `category` LIKE 'femaleperson'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="personFemale1" onclick="personFemale()">Vote</button>
+                                                    <button id="personFemale1">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -659,15 +675,21 @@
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Akinsulere Oluwakemi</b></p>
+                                                    <p id="akinsulere" style="color: black;"><b>Akinsulere Oluwakemi</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rates">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Akinsulere Oluwakemi' AND `category` LIKE 'femaleperson'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="personFemale2" onclick="personFemale()">Vote</button>
+                                                    <button id="personFemale2">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -708,91 +730,125 @@
                                             <tr>
                                                 <p>Male Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Ikobi Stephen</b></p>
+                                                    <p id="ikobi" style="color: black;"><b>Ikobi Stephen</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
-                                                    <?php echo "string"; ?>
+                                                <td id="ratet">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ikobi Stephen' AND `category` LIKE 'enter_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
                                                 </td>
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreMale1" onclick="EntreMale()">Vote</button>
+                                                    <button id="EntreMale1">Vote</button>
                                                 </td>
                                             </tr>
 
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Balogun Temitope</b></p>
+                                                    <p id="balogun" style="color: black;"><b>Balogun Temitope</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateu">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Temitope' AND `category` LIKE 'enter_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreMale2" onclick="EntreMale()">Vote</button>
+                                                    <button id="EntreMale2">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Oluyombo Erioluwa</b></p>
+                                                    <p id="oluyombo" style="color: black;"><b>Oluyombo Erioluwa</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratev">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oluyombo Erioluwa' AND `category` LIKE 'enter_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreMale3" onclick="EntreMale()">Vote</button>
+                                                    <button id="EntreMale3">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Folaji Daniel</b></p>
+                                                    <p id="folajid" style="color: black;"><b>Folaji Daniel</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratew">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Folaji Daniel' AND `category` LIKE 'enter_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreMale3" onclick="EntreMale()">Vote</button>
+                                                    <button id="EntreMale4">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adooga Stephen</b></p>
+                                                    <p id="adooga" style="color: black;"><b>Adooga Stephen</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratex">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adooga Stephen' AND `category` LIKE 'enter_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreMale4" onclick="EntreMale()">Vote</button>
+                                                    <button id="EntreMale5">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Ibukun (Saxzy)</b></p>
+                                                    <p id="ibukun" style="color: black;"><b>Ibukun (Saxzy)</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratey">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ibukun' AND `category` LIKE 'enter_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreMale5" onclick="EntreMale()">Vote</button>
+                                                    <button id="EntreMale6">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -816,15 +872,21 @@
                                             <tr>
                                                 <p>Female Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Oni Oluwakemi</b></p>
+                                                    <p id="oni" style="color: black;"><b>Oni Oluwakemi</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateaa">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oni Oluwakemi' AND `category` LIKE 'enter_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreFemale1" onclick="EntreFemale()">Vote</button>
+                                                    <button id="EntreFemale1">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -832,60 +894,84 @@
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Ojo Eunice</b></p>
+                                                    <p id="ojo" style="color: black;"><b>Ojo Eunice</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateab">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oni Oluwakemi' AND `category` LIKE 'enter_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreFemale2" onclick="EntreFemale()">Vote</button>
+                                                    <button id="EntreFemale2">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Ayaeibo Pere-ere</b></p>
+                                                    <p id="ayaeibo" style="color: black;"><b>Ayaeibo Pere-ere</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateac">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeibo Pere-ere' AND `category` LIKE 'enter_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreFemale3" onclick="EntreFemale()">Vote</button>
+                                                    <button id="EntreFemale3">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Oladimeji Olayinka (Brown Sugar)</b></p>
+                                                    <p id="oladimeji" style="color: black;"><b>Oladimeji Olayinka (Brown Sugar)</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratead">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladimeji Olayinka' AND `category` LIKE 'enter_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreFemale4" onclick="EntreFemale()">Vote</button>
+                                                    <button id="EntreFemale4">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Okechukwu Doreen</b></p>
+                                                    <p id="okechukwu" style="color: black;"><b>Okechukwu Doreen</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateae">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Okechukwu Doreen' AND `category` LIKE 'enter_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="EntreFemale5" onclick="EntreFemale()">Vote</button>
+                                                    <button id="EntreFemale5">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -927,91 +1013,124 @@
                                             <tr>
                                                 <p>Male Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Ajibade Adeife</b></p>
+                                                    <p id="ajibade" style="color: black;"><b>Ajibade Adeife</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">100 Level</h5>
                                                 </td>
-                                                <td>
-                                                    <?php echo "string"; ?>
+                                                <td id="rateaf">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade Adeife' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
                                                 </td>
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportMale1" onclick="SportMale()">Vote</button>
+                                                    <button id="SportMale1">Vote</button>
                                                 </td>
                                             </tr>
 
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adejimi Fiyinfoluwa</b></p>
+                                                    <p id="adejimi" style="color: black;"><b>Adejimi Fiyinfoluwa</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
+                                                <td id="rateag">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adejimi Fiyinfoluwa' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
                                                 <td>
-
-                                                <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportMale2" onclick="SportMale()">Vote</button>
+                                                    <button id="SportMale2">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Nwoekocha Chima</b></p>
+                                                    <p id="nwoekocha" style="color: black;"><b>Nwoekocha Chima</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateah">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Nwoekocha Chima' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportMale3" onclick="SportMale()">Vote</button>
+                                                    <button id="SportMale3">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adeniran Timileyin</b></p>
+                                                    <p id="adeniran" style="color: black;"><b>Adeniran Timileyin</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateai">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adeniran Timileyin' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportMale4" onclick="SportMale()">Vote</button>
+                                                    <button id="SportMale4">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Oladipo Timileyin (Timi Turtle)</b></p>
+                                                    <p id="oladipo" style="color: black;"><b>Oladipo Timileyin (Timi Turtle)</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateaj">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladipo Timileyin' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportMale5" onclick="SportMale()">Vote</button>
+                                                    <button id="SportMale5">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Kazeem Rufai</b></p>
+                                                    <p id="kazeem" style="color: black;"><b>Kazeem Rufai</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateak">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kazeem Rufai' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportMale1" onclick="SportMale()">Vote</button>
+                                                    <button id="SportMale6">Vote</button>
 
                                             </tr>
 
@@ -1034,15 +1153,21 @@
                                             <tr>
                                                 <p>Female Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Omomia Favour</b></p>
+                                                    <p id="omomia" style="color: black;"><b>Omomia Favour</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateal">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Omomia Favour' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportFemale1" onclick="SportFemale()">Vote</button>
+                                                    <button id="SportFemale1">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1050,45 +1175,63 @@
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Ayaeyibo Pere-ere</b></p>
+                                                    <p id="ayaeibo" style="color: black;"><b>Ayaeyibo Pereere</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateam">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeyibo Pereere' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportFemale2" onclick="SportFemale()">Vote</button>
+                                                    <button id="SportFemale2">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Nwana Grace</b></p>
+                                                    <p id="nwana" style="color: black;"><b>Nwana Grace</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratean">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Nwana Grace' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportFemale3" onclick="SportFemale()">Vote</button>
+                                                    <button id="SportFemale3">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adediran Aderonke</b></p>
+                                                    <p id="adediran" style="color: black;"><b>Adediran Aderonke</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateao">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adediran Aderonke' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="SportFemale4" onclick="SportFemale()">Vote</button>
+                                                    <button id="SportFemale4">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1129,91 +1272,125 @@
                                             <tr>
                                                 <p>Male Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Akinmola Ayomide</b></p>
+                                                    <p id="akinmola" style="color: black;"><b>Akinmola Ayomide</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
-                                                    <?php echo "string"; ?>
+                                                <td id="rateap">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Akinmola Ayomide' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
                                                 </td>
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressMale1" onclick="dressMale()">Vote</button>
+                                                    <button id="dressMale1">Vote</button>
                                                 </td>
                                             </tr>
 
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Balogun Temitope</b></p>
+                                                    <p id="balogun" style="color: black;"><b>Balogun Temitope</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateaq">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Temitope' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressMale2" onclick="dressMale()">Vote</button>
+                                                    <button id="dressMale2">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Oluyitan Victor</b></p>
+                                                    <p id="oluyitan" style="color: black;"><b>Oluyitan Victor</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="ratear">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oluyitan Victor' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressMale3" onclick="dressMale()">Vote</button>
+                                                    <button id="dressMale3">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Abiona Oluwatobiloba</b></p>
+                                                    <p id="abiona" style="color: black;"><b>Abiona Oluwatobiloba</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateas">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Abiona Oluwatobiloba' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressMale4" onclick="dressMale()">Vote</button>
+                                                    <button id="dressMale4">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adesanya Dayo</b></p>
+                                                    <p id="adesanya" style="color: black;"><b>Adesanya Dayo</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateat">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adesanya Dayo' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressMale5" onclick="dressMale()">Vote</button>
+                                                    <button id="dressMale5">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Kumuyi Wisdom</b></p>
+                                                    <p id="kumuyi" style="color: black;"><b>Kumuyi Wisdom</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateau">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kumuyi Wisdom' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressMale6" onclick="dressMale()">Vote</button>
+                                                    <button id="dressMale6">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1237,15 +1414,21 @@
                                             <tr>
                                                 <p>Female Category</p>
                                                 <td>
-                                                    <p style="color: black;"><b>Wisdom Promise</b></p>
+                                                    <p id="wisdom" style="color: black;"><b>Wisdom Promise</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateav">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Wisdom Promise' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressFemale1" onclick="dressFemale()">Vote</button>
+                                                    <button id="dressFemale1">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1253,75 +1436,105 @@
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adeyemi Praise</b></p>
+                                                    <p id="adeyemi" style="color: black;"><b>Adeyemi Praise</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">200 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateaw">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adeyemi Praise' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressFemale2" onclick="dressFemale()">Vote</button>
+                                                    <button id="dressFemale2">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Jimoh Busola</b></p>
+                                                    <p id="jimoh" style="color: black;"><b>Jimoh Busola</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateax">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Jimoh Busola' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressFemale3" onclick="dressFemale()">Vote</button>
+                                                    <button id="dressFemale3">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Ayodele Abigael</b></p>
+                                                    <p id="ayodele" style="color: black;"><b>Ayodele Abigael</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateay">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayodele Abigael' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressFemale4" onclick="dressFemale()">Vote</button>
+                                                    <button id="dressFemale4">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Adesida Bukola </b></p>
+                                                    <p id="adesida" style="color: black;"><b>Adesida Bukola </b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateaz">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adesida Bukola' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressFemale5" onclick="dressFemale()">Vote</button>
+                                                    <button  id="dressFemale5">Vote</button>
                                                 </td>
 
                                             </tr>
 
                                             <tr>
                                                 <td>
-                                                    <p style="color: black;"><b>Balogun Solape </b></p>
+                                                    <p id="baloguns" style="color: black;"><b>Balogun Solape </b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
                                                 </td>
-                                                <td>
+                                                <td id="rateaba">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Solape' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                   echo $row['votes']; ?>
+                                                </td>
 
                                                 <td>
-                                                    <button style="padding: 17px 10px; background: #7681b0; color: white; border-radius: 10px" id="dressFemale6" onclick="dressFemale()">Vote</button>
+                                                    <button id="dressFemale6">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1478,7 +1691,7 @@ if(isset($_SESSION['votedp']) || isset($_SESSION['votedq'])) {
 }//disable button for person male category ends
 
 
-//disable button for person male category begins
+//disable button for person Female category begins
 if(isset($_SESSION['votedr']) || isset($_SESSION['voteds'])) {
 
     echo "
@@ -1487,7 +1700,102 @@ if(isset($_SESSION['votedr']) || isset($_SESSION['voteds'])) {
     document.getElementById('personFemale2').style.visibility = 'hidden';
     </script>
     ";
-}//disable button for person male category ends
+}//disable button for person Female category ends
+
+
+//disable button for Male Entrepreneur category begins
+if(isset($_SESSION['votedt']) || isset($_SESSION['votedu']) || isset($_SESSION['votedv']) || isset($_SESSION['votedw']) || isset($_SESSION['votedx']) || isset($_SESSION['votedy'])) {
+
+    echo "
+        <script>
+    document.getElementById('EntreMale1').style.visibility = 'hidden';
+    document.getElementById('EntreMale2').style.visibility = 'hidden';
+    document.getElementById('EntreMale3').style.visibility = 'hidden';
+    document.getElementById('EntreMale4').style.visibility = 'hidden';
+    document.getElementById('EntreMale5').style.visibility = 'hidden';
+    document.getElementById('EntreMale6').style.visibility = 'hidden';
+    </script>
+    ";
+}//disable button for Male Entrepreneur category ends
+
+
+//disable button for Female Entrepreneur category begins
+if(isset($_SESSION['votedaa']) || isset($_SESSION['votedab']) || isset($_SESSION['votedac']) || isset($_SESSION['votedad']) || isset($_SESSION['votedae'])) {
+
+    echo "
+        <script>
+    document.getElementById('EntreFemale1').style.visibility = 'hidden';
+    document.getElementById('EntreFemale2').style.visibility = 'hidden';
+    document.getElementById('EntreFemale3').style.visibility = 'hidden';
+    document.getElementById('EntreFemale4').style.visibility = 'hidden';
+    document.getElementById('EntreFemale5').style.visibility = 'hidden';
+    </script>
+    ";
+}//disable button for Female Entrepreneur category ends
+
+
+//disable button for Male Sport category begins
+if(isset($_SESSION['votedaf']) || isset($_SESSION['votedag']) || isset($_SESSION['votedah']) || isset($_SESSION['votedai']) || isset($_SESSION['votedaj']) || isset($_SESSION['votedak'])) {
+
+    echo "
+        <script>
+    document.getElementById('SportMale1').style.visibility = 'hidden';
+    document.getElementById('SportMale2').style.visibility = 'hidden';
+    document.getElementById('SportMale3').style.visibility = 'hidden';
+    document.getElementById('SportMale4').style.visibility = 'hidden';
+    document.getElementById('SportMale5').style.visibility = 'hidden';
+    document.getElementById('SportMale6').style.visibility = 'hidden';
+    </script>
+    ";
+}//disable button for Male Sport category ends
+
+
+//disable button for Female Sport category begins
+if(isset($_SESSION['votedal']) || isset($_SESSION['votedam']) || isset($_SESSION['votedan']) || isset($_SESSION['votedao'])) {
+
+    echo "
+        <script>
+    document.getElementById('SportFemale1').style.visibility = 'hidden';
+    document.getElementById('SportFemale2').style.visibility = 'hidden';
+    document.getElementById('SportFemale3').style.visibility = 'hidden';
+    document.getElementById('SportFemale4').style.visibility = 'hidden';
+    </script>
+    ";
+}//disable button for Female Sport category ends
+
+
+//disable button for Male Dress category begins
+if(isset($_SESSION['votedap']) || isset($_SESSION['votedaq']) || isset($_SESSION['votedar']) || isset($_SESSION['votedas']) || isset($_SESSION['votedat']) || isset($_SESSION['votedau'])) {
+
+    echo "
+        <script>
+    document.getElementById('dressMale1').style.visibility = 'hidden';
+    document.getElementById('dressMale2').style.visibility = 'hidden';
+    document.getElementById('dressMale3').style.visibility = 'hidden';
+    document.getElementById('dressMale4').style.visibility = 'hidden';
+    document.getElementById('dressMale5').style.visibility = 'hidden';
+    document.getElementById('dressMale6').style.visibility = 'hidden';
+    </script>
+    ";
+}//disable button for Male Dress category ends
+
+
+//disable button for Female Dress category begins
+if(isset($_SESSION['votedav']) || isset($_SESSION['votedaw']) || isset($_SESSION['votedax']) || isset($_SESSION['voteday']) || isset($_SESSION['votedaz']) || isset($_SESSION['votedba'])) {
+
+    echo "
+        <script>
+    document.getElementById('dressFemale1').style.visibility = 'hidden';
+    document.getElementById('dressFemale2').style.visibility = 'hidden';
+    document.getElementById('dressFemale3').style.visibility = 'hidden';
+    document.getElementById('dressFemale4').style.visibility = 'hidden';
+    document.getElementById('dressFemale5').style.visibility = 'hidden';
+    document.getElementById('dressFemale6').style.visibility = 'hidden';
+    </script>
+    ";
+}//disable button for Female Dress category ends
+
+?>
 
 ?>
 
