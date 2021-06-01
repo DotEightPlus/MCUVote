@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2021 at 02:45 PM
+-- Generation Time: Jun 01, 2021 at 07:04 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -53,13 +53,6 @@ CREATE TABLE `users` (
   `active` text NOT NULL,
   `ip` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `sn`, `matric`, `name`, `dept`, `gend`, `email`, `date`, `active`, `ip`) VALUES
-(41, '1', '23456765432', 'Aholu Samuel Viavor', 'Accounting', 'Male', 'samuelaholu15@gmail.com', '2001-06-21 01:24:51', '0', '::1');
 
 -- --------------------------------------------------------
 
@@ -117,7 +110,7 @@ INSERT INTO `votes` (`id`, `name`, `category`, `votes`) VALUES
 (36, 'Oladipo Timileyin', 'sport_man', 0),
 (37, 'Kazeem Rufai', 'sport_man', 0),
 (38, 'Omomia Favour', 'sport_woman', 0),
-(39, 'Ayaeyibo Pereere', 'sport_woman', 0),
+(39, 'Ayaeibo Pere-ere', 'sport_woman', 0),
 (40, 'Nwana Grace', 'sport_woman', 0),
 (41, 'Adediran Aderonke', 'sport_woman', 0),
 (45, 'Akinmola Ayomide', 'dress_male', 0),
@@ -163,13 +156,13 @@ ALTER TABLE `votes`
 -- AUTO_INCREMENT for table `secure`
 --
 ALTER TABLE `secure`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `votes`

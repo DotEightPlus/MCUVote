@@ -1175,14 +1175,14 @@
 
                                             <tr>
                                                 <td>
-                                                    <p id="ayaeibo" style="color: black;"><b>Ayaeyibo Pereere</b></p>
+                                                    <p id="ayaeibo" style="color: black;"><b>Ayaeibo Pere-ere</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
                                                 </td>
                                                 <td id="rateam">
                                                     <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeyibo Pereere' AND `category` LIKE 'sport_woman'";
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeibo Pere-ere' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
                                                    echo $row['votes']; ?>

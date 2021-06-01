@@ -404,8 +404,7 @@ $(document).ready(function()
 	{
 		var aq = $("#oluyombo").text();
 		var bq = 'maleperson';
-
-		alert(aq); 
+ 
 
 		$.ajax ({
 		type 		:  'post',
@@ -620,7 +619,7 @@ $(document).ready(function()
 	//EntreMale6
 	$("#EntreMale6").click(function()
 	{
-		var az = $("#ibukun").text();
+		var az = 'Ibukun';
 		var bz = 'enter_male';
 
 		//alert(vnmcname); 
@@ -960,7 +959,7 @@ $(document).ready(function()
 	//SportFemale2
 	$("#SportFemale2").click(function()
 	{
-		var aam = $("#ayaeyibo").text();
+		var aam = $("#ayaeibo").text();
 		var bam = 'sport_woman';
 
 		//alert(vnmcname); 
