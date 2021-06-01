@@ -771,7 +771,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <p id="oluyombo" style="color: black;"><b>Oluyombo Erioluwa</b></p>
+                                                    <p id="oluyombo2" style="color: black;"><b>Oluyombo Erioluwa</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>

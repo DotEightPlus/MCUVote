@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2021 at 04:45 PM
+-- Generation Time: Jun 01, 2021 at 02:45 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -54,6 +54,13 @@ CREATE TABLE `users` (
   `ip` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `sn`, `matric`, `name`, `dept`, `gend`, `email`, `date`, `active`, `ip`) VALUES
+(41, '1', '23456765432', 'Aholu Samuel Viavor', 'Accounting', 'Male', 'samuelaholu15@gmail.com', '2001-06-21 01:24:51', '0', '::1');
+
 -- --------------------------------------------------------
 
 --
@@ -73,39 +80,58 @@ CREATE TABLE `votes` (
 
 INSERT INTO `votes` (`id`, `name`, `category`, `votes`) VALUES
 (1, 'Ajibade Adeife', 'fresh_male', 0),
-(2, 'Olamilekan', 'fresh_male', 4),
-(3, 'George Ibukun', 'fresh_female', 4),
-(4, 'Folaji Phoebe', 'fresh_female', 4),
-(5, 'Adeleye Korede', 'mr', 3),
+(2, 'Olamilekan', 'fresh_male', 0),
+(3, 'George Ibukun', 'fresh_female', 0),
+(4, 'Folaji Phoebe', 'fresh_female', 0),
+(5, 'Adeleye Korede', 'mr', 0),
 (6, 'Akinmola Ayomide', 'mr', 0),
-(7, 'Opara David', 'mr', 2),
-(8, 'Kambi Tomisin', 'mr', 2),
+(7, 'Opara David', 'mr', 0),
+(8, 'Kambi Tomisin', 'mr', 0),
 (9, 'Kumuyi Wisdom', 'mr', 0),
 (10, 'Ewelike Kelvin', 'mr', 0),
-(11, 'Omomia Favour', 'miss', 2),
+(11, 'Omomia Favour', 'miss', 0),
 (12, 'Rasheed Loveth', 'miss', 0),
-(13, 'Aremu Ololade', 'miss', 2),
+(13, 'Aremu Ololade', 'miss', 0),
 (14, 'Olagunju Oluwatoke', 'miss', 0),
 (15, 'Atanda Precious', 'miss', 0),
 (16, 'Ologun Oyinkansola', 'miss', 0),
-(17, 'oluyombo', 'male_person', 0),
-(18, 'oladapo', 'male_person', 0),
-(19, 'abiona', 'female_person', 0),
-(20, 'akinsulere', 'female_person', 0),
-(21, 'ikobi', 'enter_male', 0),
-(22, 'balogun', 'enter_male', 0),
-(23, 'oluyombo', 'enter_male', 1),
-(24, 'folaji', 'enter_male', 1),
-(25, 'adooga', 'enter_male', 1),
-(26, 'ibukun', 'enter_male', 1),
-(27, 'oni', 'enter_female', 1),
-(28, 'ojo', 'enter_female', 1),
-(29, 'ayaeyibo', 'enter_female', 1),
-(30, 'oladimiji', 'enter_female', 1),
-(31, 'okechukwu', 'enter_female', 1),
-(32, 'ajibade', 'sport_man', 1),
-(33, 'adejimi', 'sport_man', 1),
-(34, 'nwoekocha', 'sport_man', 1);
+(17, 'Oluyombo Erioluwa', 'maleperson', 0),
+(18, 'Oladapo Tioluwani', 'maleperson', 0),
+(19, 'Abiona Eniola', 'femaleperson', 0),
+(20, 'Akinsulere Oluwakemi', 'femaleperson', 0),
+(21, 'Ikobi Stephen', 'enter_male', 0),
+(22, 'Balogun Temitope', 'enter_male', 0),
+(23, 'Oluyombo Erioluwa', 'enter_male', 0),
+(24, 'Folaji Daniel', 'enter_male', 0),
+(25, 'Adooga Stephen', 'enter_male', 0),
+(26, 'Ibukun', 'enter_male', 0),
+(27, 'Oni Oluwakemi', 'enter_female', 0),
+(28, 'Ojo Eunice', 'enter_female', 0),
+(29, 'Ayaeibo Pere-ere', 'enter_female', 0),
+(30, 'Oladimeji Olayinka', 'enter_female', 0),
+(31, 'Okechukwu Doreen', 'enter_female', 0),
+(32, 'Ajibade Adeife', 'sport_man', 0),
+(33, 'Adejimi Fiyinfoluwa', 'sport_man', 0),
+(34, 'Nwoekocha Chima', 'sport_man', 0),
+(35, 'Adeniran Timileyin', 'sport_man', 0),
+(36, 'Oladipo Timileyin', 'sport_man', 0),
+(37, 'Kazeem Rufai', 'sport_man', 0),
+(38, 'Omomia Favour', 'sport_woman', 0),
+(39, 'Ayaeyibo Pereere', 'sport_woman', 0),
+(40, 'Nwana Grace', 'sport_woman', 0),
+(41, 'Adediran Aderonke', 'sport_woman', 0),
+(45, 'Akinmola Ayomide', 'dress_male', 0),
+(46, 'Balogun Temitope', 'dress_male', 0),
+(47, 'Oluyitan Victor', 'dress_male', 0),
+(48, 'Abiona Oluwatobiloba', 'dress_male', 0),
+(49, 'Adesanya Dayo', 'dress_male', 0),
+(50, 'Kumuyi Wisdom', 'dress_male', 0),
+(51, 'Wisdom Promise', 'dress_female', 0),
+(52, 'Adeyemi Praise', 'dress_female', 0),
+(53, 'Jimoh Busola', 'dress_female', 0),
+(54, 'Ayodele Abigael', 'dress_female', 0),
+(55, 'Adesida Bukola', 'dress_female', 0),
+(56, 'Balogun Solape', 'dress_female', 0);
 
 --
 -- Indexes for dumped tables
@@ -137,19 +163,19 @@ ALTER TABLE `votes`
 -- AUTO_INCREMENT for table `secure`
 --
 ALTER TABLE `secure`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `votes`
 --
 ALTER TABLE `votes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=334;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -540,7 +540,7 @@ $(document).ready(function()
 	//EntreMale3
 	$("#EntreMale3").click(function()
 	{
-		var aw = $("#oluyombo").text();
+		var aw = 'Oluyombo Erioluwa';
 		var bw = 'enter_male';
 
 		//alert(vnmcname); 
@@ -960,7 +960,7 @@ $(document).ready(function()
 	//SportFemale2
 	$("#SportFemale2").click(function()
 	{
-		var aam = $("#ayaeibo").text();
+		var aam = $("#ayaeyibo").text();
 		var bam = 'sport_woman';
 
 		//alert(vnmcname); 

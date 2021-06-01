@@ -2109,8 +2109,8 @@ if (isset($_POST['aam']) && isset($_POST['bam'])) {
 
 	//declare variables
 
-	$nomname  = 'Ayaeyibo Pereere';
-	$category = 'sport_woman';
+	$nomname  = 'aam';
+	$category = 'bam';
 	$ipaddr   = $_SERVER['REMOTE_ADDR'];
 
 	//declare matric variable from user accreditattion
