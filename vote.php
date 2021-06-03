@@ -146,7 +146,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade Adeife' AND `category` LIKE 'fresh_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -170,7 +170,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Olamilekan' AND `category` LIKE 'fresh_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -211,7 +211,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'George Ibukun' AND `category` LIKE 'fresh_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -237,7 +237,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Folaji Phoebe' AND `category` LIKE 'fresh_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -296,7 +296,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adeleye Korede' AND `category` LIKE 'mr'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -322,7 +322,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Akinmola Ayomide' AND `category` LIKE 'mr'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -348,7 +348,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Opara David' AND `category` LIKE 'mr'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -373,7 +373,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kambi Tomisin' AND `category` LIKE 'mr'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -398,7 +398,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kumuyi Wisdom' AND `category` LIKE 'mr'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -423,7 +423,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ewelike Kelvin' AND `category` LIKE 'mr'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -482,7 +482,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Omomia Favour' AND `category` LIKE 'miss'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -508,7 +508,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Rasheed Loveth' AND `category` LIKE 'miss'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -534,7 +534,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Aremu Ololade' AND `category` LIKE 'miss'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -559,7 +559,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Olagunju Oluwatoke' AND `category` LIKE 'miss'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -584,7 +584,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Atanda Precious' AND `category` LIKE 'miss'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -609,7 +609,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ologun Oyinkansola' AND `category` LIKE 'miss'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -668,7 +668,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oluyombo Erioluwa' AND `category` LIKE 'maleperson'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -692,7 +692,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladapo Tioluwani' AND `category` LIKE 'maleperson'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -735,7 +735,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Abiona Eniola' AND `category` LIKE 'femaleperson'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -762,7 +762,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Akinsulere Oluwakemi' AND `category` LIKE 'femaleperson'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -821,7 +821,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ikobi Stephen' AND `category` LIKE 'enter_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -845,7 +845,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Temitope' AND `category` LIKE 'enter_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -870,7 +870,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oluyombo Erioluwa' AND `category` LIKE 'enter_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -895,7 +895,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Folaji Daniel' AND `category` LIKE 'enter_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -920,7 +920,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adooga Stephen' AND `category` LIKE 'enter_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -945,7 +945,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ibukun' AND `category` LIKE 'enter_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -987,7 +987,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oni Oluwakemi' AND `category` LIKE 'enter_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1013,7 +1013,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oni Oluwakemi' AND `category` LIKE 'enter_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1038,7 +1038,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeibo Pere-ere' AND `category` LIKE 'enter_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1064,7 +1064,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladimeji Olayinka' AND `category` LIKE 'enter_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1089,7 +1089,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Okechukwu Doreen' AND `category` LIKE 'enter_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1149,7 +1149,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade Adeife' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1173,7 +1173,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adejimi Fiyinfoluwa' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1197,7 +1197,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Nwoekocha Chima' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1222,7 +1222,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adeniran Timileyin' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1248,7 +1248,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladipo Timileyin' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1273,7 +1273,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kazeem Rufai' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1314,7 +1314,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Omomia Favour' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1340,7 +1340,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeibo Pere-ere' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1365,7 +1365,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Nwana Grace' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1390,7 +1390,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adediran Aderonke' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1449,7 +1449,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Akinmola Ayomide' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1473,7 +1473,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Temitope' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1498,7 +1498,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oluyitan Victor' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1523,7 +1523,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Abiona Oluwatobiloba' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1548,7 +1548,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adesanya Dayo' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1573,7 +1573,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kumuyi Wisdom' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1615,7 +1615,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Wisdom Promise' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1641,7 +1641,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adeyemi Praise' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1666,7 +1666,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Jimoh Busola' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1691,7 +1691,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayodele Abigael' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1716,7 +1716,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adesida Bukola' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        
@@ -1741,7 +1741,7 @@ button {
                                                    $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Solape' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "memem") {
+                                                  if($_SESSION['usermatric'] == "180301008") {
                                                     echo $row['votes'];  
                                                    } else {
                                                        

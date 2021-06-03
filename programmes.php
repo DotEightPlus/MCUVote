@@ -24,52 +24,49 @@
             <div class="row">
                 <div class="offset-xl-1 col-lg-8">
                     <div class="about-details-cap mb-50">
-                        <h4>Monday</h4>
-                        <p>• Awareness/Publicity (with the use of the branded T-shirt for the entire Staff & Students)
-                        </p>
+                        <h4>Monday, 21st June 2021</h4>
                         <p> • Game Night :- <b>
-                                Time: 7:00PM – 10PM</b> | <b> Venue: Multi-Purpose Hall</b>
+                                Time: 7:00PM – 9:00PM
                         </p>
                     </div>
 
                     <div class="about-details-cap mb-50">
-                        <h4>Tuesday</h4>
-                        <p>• Symposium by a Guest Lecturer :- <b>Time: 10:00AM-11:30AM</b>
+                        <h4>Tuesday, 22nd June 2021</h4>
+                        <p>• Symposium by a Guest Lecturer :- <b>Time: 3:00PM - 4:30PM</b>
                         </p>
-                        <p> • Questions and Answers with Alumni <br /><b>Social Sciences :- Time: 12:00PM-12:45PM</b>
-                            <br /> <b>
-                                Management Sciences :- Time: 12:00PM-12:45PM
-                            </b><br />Venue: <b>Multi-Purpose Hall</b>
-                        </p>
-                    </div>
-
-                    <div class="about-details-cap mb-50">
-                        <h4>Wednessday</h4>
-                        <p>• Sports (Indoor and Outdoor Events :- <b> Time: 12:00 PM-5:00PM
-                                <br />Venue: Sport
-                                Complex/Multi-Purpose Hall</b>
-                        </p>
-                        <p> • Movie Night <br /><b> Time: 7:00PM-9:00PM</b>
-
+                        <p> • Questions and Answers with Alumni <b>
+                                :- Time: 4:30PM - 5:00PM
+                            </b>
                         </p>
                     </div>
 
                     <div class="about-details-cap mb-50">
-                        <h4>Thursday</h4>
-                        <p>• Trade Fair & Exhibition - <b> ‘STUDENTPRENEURSHIP: ENCOURAGING ACADEMICS & CRAFT’
-                                <br />Time: 11:00AM-3:00PM</b> <br /><b> Venue: Open field opposite COSMAS building</b>
+                        <h4>Wednessday, 23rd June 2021</h4>
+                        <p>• Sports (Indoor and Outdoor Events :- <b> Time: 3:00PM - 6:00PM
                         </p>
-                        <p> • Bonfire <br /><b> Time: 7:00PM – 10:00PM</b>
+                        <p> • Movie Night:- <b> Time: 7:00PM - 9:00PM</b>
 
                         </p>
                     </div>
 
                     <div class="about-details-cap mb-50">
-                        <h4>Friday</h4>
-                        <p>• Dinner/Award Night :- <b> Time: 8:00PM-11:45PM </b>
+                        <h4>Thursday, 24th June 2021</h4>
+                        <p>• STUDPRENUERSHIP :- <b>Time: 3:00PM - 5:00PM</b>
                         </p>
-                        <p> • Recognition/Commendation of all Executives
+                        <p> • Bonfire :- <b> Time: 7:00PM – 9:30PM</b>
 
+                        </p>
+                    </div>
+
+                    <div class="about-details-cap mb-50">
+                        <h4>Friday, 25th June 2021</h4>
+                        <p>• Dinner/Award Night :- <b> Time: 8:00PM - 11:45PM </b>
+                        </p>
+                    </div>
+
+                    <div class="about-details-cap mb-50">
+                        <h4>Sunday, 27th June 2021</h4>
+                        <p>• Thanksgiving :- <b> Time: 9:00AM - 11:00AM </b>
                         </p>
                     </div>
                 </div>
