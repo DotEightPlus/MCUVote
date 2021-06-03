@@ -1,6 +1,7 @@
 var CACHE_NAME = 'pwgen-cache';
 var urlsToCache = [
-    'index.php'
+    'index.php',
+    'vote.php'
 ];
 console.log('loading sw');
 

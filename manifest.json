@@ -1,22 +1,22 @@
 {
-  "short_name": "DotLive From DotEightPlus",
-  "name": "DotLive From DotEightPlus",
-  "description": "No more hostel stress!",
+  "short_name": "MCU-SOMSSA",
+  "name": "MCU-SOMSSA",
+  "description": "MCU-SOMSSA",
   "lang": "en",
   "icons": [
     {
-      "src": "assets/img/logo/pwa.png",
+      "src": "img/pwa.png",
       "type": "image/png",
       "sizes": "144x144"
     }
   ],
   "start_url": "./?v3&utm_source=web_app_manifest",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#7681b0",
+  "theme_color": "#7681b0",
   "color": "#ffffff",
   "display": "standalone",
   "related_applications": [{
     "platform": "web",
-    "url": "https://dotlive.com.ng"
+    "url": "https://mcu-somssa.herokuapp.com"
   }]
 }

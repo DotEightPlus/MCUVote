@@ -363,7 +363,7 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="kambi" style="color: black;"><b>Kambi Tomisin</b></p>
+                                                    <p id="kambi" style="color: black;"><b>Kembi Oluwatomisin</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">300 Level</h5>
