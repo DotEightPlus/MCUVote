@@ -231,7 +231,12 @@ if (isset($_POST['a']) && isset($_POST['b'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+	if($_SESSION['usermatric'] == "memmeme"){
+		if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
+	}
+	
     $_SESSION['voted'] = $voted;
 }
 	
@@ -282,7 +287,9 @@ if (isset($_POST['ab']) && isset($_POST['bb'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['voteda'] = $voted;
 }
 	
@@ -334,7 +341,9 @@ if (isset($_POST['ac']) && isset($_POST['bc'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedb'] = $voted;
 }
 	
@@ -385,7 +394,9 @@ if (isset($_POST['ad']) && isset($_POST['bd'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedc'] = $voted;
 }
 	
@@ -436,7 +447,9 @@ if (isset($_POST['ae']) && isset($_POST['be'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedd'] = $voted;
 }
 	
@@ -486,7 +499,9 @@ if (isset($_POST['af']) && isset($_POST['bf'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votede'] = $voted;
 }
 	
@@ -536,7 +551,9 @@ if (isset($_POST['ag']) && isset($_POST['bg'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedf'] = $voted;
 }
 	
@@ -586,7 +603,9 @@ if (isset($_POST['ah']) && isset($_POST['bh'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedg'] = $voted;
 }
 	
@@ -636,7 +655,9 @@ if (isset($_POST['ai']) && isset($_POST['bi'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedh'] = $voted;
 }
 	
@@ -686,7 +707,9 @@ if (isset($_POST['aj']) && isset($_POST['bj'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedi'] = $voted;
 }
 	
@@ -737,7 +760,9 @@ if (isset($_POST['ak']) && isset($_POST['bk'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedj'] = $voted;
 }
 	
@@ -787,7 +812,9 @@ if (isset($_POST['al']) && isset($_POST['bl'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedk'] = $voted;
 }
 	
@@ -837,7 +864,9 @@ if (isset($_POST['am']) && isset($_POST['bm'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedl'] = $voted;
 }
 	
@@ -887,7 +916,9 @@ if (isset($_POST['an']) && isset($_POST['bn'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedm'] = $voted;
 }
 	
@@ -937,7 +968,9 @@ if (isset($_POST['ao']) && isset($_POST['bo'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedn'] = $voted;
 }
 	
@@ -987,7 +1020,9 @@ if (isset($_POST['ap']) && isset($_POST['bp'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedo'] = $voted;
 }
 	
@@ -1036,7 +1071,9 @@ if (isset($_POST['aq']) && isset($_POST['bq'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Oluyombo Erioluwa' AND `category` = 'maleperson'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedp'] = $voted;
 }
 	
@@ -1086,7 +1123,9 @@ if (isset($_POST['ar']) && isset($_POST['br'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedq'] = $voted;
 }
 	
@@ -1137,7 +1176,9 @@ if (isset($_POST['as']) && isset($_POST['bs'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedr'] = $voted;
 }
 	
@@ -1188,7 +1229,9 @@ if (isset($_POST['at']) && isset($_POST['bt'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['voteds'] = $voted;
 }
 	
@@ -1238,7 +1281,9 @@ if (isset($_POST['au']) && isset($_POST['bu'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedt'] = $voted;
 }
 	
@@ -1289,7 +1334,9 @@ if (isset($_POST['av']) && isset($_POST['bv'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedu'] = $voted;
 }
 	
@@ -1339,7 +1386,9 @@ if (isset($_POST['aw']) && isset($_POST['bw'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedv'] = $voted;
 }
 	
@@ -1389,7 +1438,9 @@ if (isset($_POST['ax']) && isset($_POST['bx'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedw'] = $voted;
 }
 	
@@ -1439,7 +1490,9 @@ if (isset($_POST['ay']) && isset($_POST['by'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedx'] = $voted;
 }
 	
@@ -1489,7 +1542,9 @@ if (isset($_POST['az']) && isset($_POST['bz'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedy'] = $voted;
 }
 	
@@ -1539,7 +1594,9 @@ if (isset($_POST['aaa']) && isset($_POST['baa'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedaa'] = $voted;
 }
 	
@@ -1591,7 +1648,9 @@ if (isset($_POST['aab']) && isset($_POST['bab'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedab'] = $voted;
 }
 	
@@ -1643,7 +1702,9 @@ if (isset($_POST['aac']) && isset($_POST['bac'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedac'] = $voted;
 }
 	
@@ -1694,7 +1755,9 @@ if (isset($_POST['aad']) && isset($_POST['bad'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedad'] = $voted;
 }
 	
@@ -1745,7 +1808,9 @@ if (isset($_POST['aae']) && isset($_POST['bae'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedae'] = $voted;
 }
 	
@@ -1795,7 +1860,9 @@ if (isset($_POST['aaf']) && isset($_POST['baf'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedaf'] = $voted;
 }
 	
@@ -1845,7 +1912,9 @@ if (isset($_POST['aag']) && isset($_POST['bag'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedag'] = $voted;
 }
 	
@@ -1896,7 +1965,9 @@ if (isset($_POST['aah']) && isset($_POST['bah'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedah'] = $voted;
 }
 	
@@ -1946,7 +2017,9 @@ if (isset($_POST['aai']) && isset($_POST['bai'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedai'] = $voted;
 }
 	
@@ -1996,7 +2069,9 @@ if (isset($_POST['aaj']) && isset($_POST['baj'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedaj'] = $voted;
 }
 	
@@ -2046,7 +2121,9 @@ if (isset($_POST['aak']) && isset($_POST['bak'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedak'] = $voted;
 }
 	
@@ -2096,7 +2173,9 @@ if (isset($_POST['aal']) && isset($_POST['bal'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedal'] = $voted;
 }
 	
@@ -2146,7 +2225,9 @@ if (isset($_POST['aam']) && isset($_POST['bam'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedam'] = $voted;
 }
 	
@@ -2196,7 +2277,9 @@ if (isset($_POST['aan']) && isset($_POST['ban'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedan'] = $voted;
 }
 	
@@ -2246,7 +2329,9 @@ if (isset($_POST['aao']) && isset($_POST['bao'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedao'] = $voted;
 }
 	
@@ -2296,7 +2381,9 @@ if (isset($_POST['aap']) && isset($_POST['bap'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedap'] = $voted;
 }
 	
@@ -2346,7 +2433,9 @@ if (isset($_POST['aaq']) && isset($_POST['baq'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedaq'] = $voted;
 }
 	
@@ -2396,7 +2485,9 @@ if (isset($_POST['aar']) && isset($_POST['bar'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedar'] = $voted;
 }
 	
@@ -2446,7 +2537,9 @@ if (isset($_POST['aas']) && isset($_POST['bas'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedas'] = $voted;
 }
 	
@@ -2496,7 +2589,9 @@ if (isset($_POST['aat']) && isset($_POST['bat'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedat'] = $voted;
 }
 	
@@ -2547,7 +2642,9 @@ if (isset($_POST['aau']) && isset($_POST['bau'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedau'] = $voted;
 }
 	
@@ -2597,7 +2694,9 @@ if (isset($_POST['aav']) && isset($_POST['bav'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedav'] = $voted;
 }
 	
@@ -2647,7 +2746,9 @@ if (isset($_POST['aaw']) && isset($_POST['baw'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedaw'] = $voted;
 }
 	
@@ -2697,7 +2798,9 @@ if (isset($_POST['aax']) && isset($_POST['bax'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedax'] = $voted;
 }
 	
@@ -2747,7 +2850,9 @@ if (isset($_POST['aay']) && isset($_POST['bay'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['voteday'] = $voted;
 }
 	
@@ -2797,7 +2902,9 @@ if (isset($_POST['aaz']) && isset($_POST['baz'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedaz'] = $voted;
 }
 	
@@ -2847,7 +2954,9 @@ if (isset($_POST['aba']) && isset($_POST['bba'])) {
     $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
-    echo $voted;
+    if($_SESSION['usermatric'] == "memmeme"){
+		echo $voted;
+	}
     $_SESSION['votedba'] = $voted;
 }
 	
@@ -2856,6 +2965,3 @@ if (isset($_POST['aba']) && isset($_POST['bba'])) {
 
 
 ?>
-
-
-
