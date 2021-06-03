@@ -19,7 +19,6 @@ button {
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
                             <h2>Vote Nominees</h2>
-                            <p>Votng Starts: | Voting Ends: </p>
                         </div>
                     </div>
                 </div>
