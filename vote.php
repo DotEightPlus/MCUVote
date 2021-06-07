@@ -160,7 +160,7 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="olamilekan" style="color: black;"><b>Olamilekan</b></p>
+                                                    <p id="olamilekan" style="color: black;"><b>Otemoye Olamilekan</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">100 Level</h5>
