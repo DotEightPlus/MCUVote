@@ -160,7 +160,8 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="olamilekan" style="color: black;"><b>Otemoye Olamilekan</b></p>
+                                                    <p id="olamilekan" style="color: black;"><b>Otemoye Olamilekan</b>
+                                                    </p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">100 Level</h5>
@@ -933,30 +934,6 @@ button {
 
                                             </tr>
 
-                                            <tr>
-                                                <td>
-                                                    <p id="ibukun" style="color: black;"><b>Ibukun (Saxzy)</b></p>
-                                                </td>
-                                                <td>
-                                                    <h5 style="color: black;">400 Level</h5>
-                                                </td>
-                                                <td id="ratey">
-                                                    <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ibukun' AND `category` LIKE 'enter_male'";
-                                                   $res = query($sql);
-                                                   $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "180301008") {
-                                                    echo $row['votes'];  
-                                                   } else {
-                                                       
-                                                   } ?>
-                                                </td>
-
-                                                <td>
-                                                    <button id="EntreMale6">Vote</button>
-                                                </td>
-
-                                            </tr>
 
 
                                         </tbody>
@@ -1136,30 +1113,6 @@ button {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <p>Male Category</p>
-                                                <td>
-                                                    <p id="ajibade" style="color: black;"><b>Ajibade Adeife</b></p>
-                                                </td>
-                                                <td>
-                                                    <h5 style="color: black;">100 Level</h5>
-                                                </td>
-                                                <td id="rateaf">
-                                                    <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ajibade Adeife' AND `category` LIKE 'sport_man'";
-                                                   $res = query($sql);
-                                                   $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "180301008") {
-                                                    echo $row['votes'];  
-                                                   } else {
-                                                       
-                                                   } ?>
-                                                </td>
-                                                <td>
-                                                    <button id="SportMale1">Vote</button>
-                                                </td>
-                                            </tr>
-
 
                                             <tr>
                                                 <td>
