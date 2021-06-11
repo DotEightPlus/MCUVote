@@ -1027,33 +1027,6 @@ button {
                                                 </td>
 
                                             </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p id="oladimeji" style="color: black;"><b>Oladimeji Olayinka (Brown
-                                                            Sugar)</b></p>
-                                                </td>
-                                                <td>
-                                                    <h5 style="color: black;">400 Level</h5>
-                                                </td>
-                                                <td id="ratead">
-                                                    <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oladimeji Olayinka' AND `category` LIKE 'enter_female'";
-                                                   $res = query($sql);
-                                                   $row = mysqli_fetch_array($res);
-                                                  if($_SESSION['usermatric'] == "180301008") {
-                                                    echo $row['votes'];  
-                                                   } else {
-                                                       
-                                                   } ?>
-                                                </td>
-
-                                                <td>
-                                                    <button id="EntreFemale4">Vote</button>
-                                                </td>
-
-                                            </tr>
-
                                             <tr>
                                                 <td>
                                                     <p id="okechukwu" style="color: black;"><b>Okechukwu Doreen</b></p>
