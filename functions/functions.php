@@ -86,13 +86,13 @@ function email_exist($email) {
 	$sql = "SELECT * FROM users WHERE email = '$email'";
 	$result = query($sql);
 
-	if(row_count($result) == 1 && $email != "admin@somssa.com") {
+	if(row_count($result) == '') {
 
-		return true;
+		return false;
 
 	}else {
 
-		return false;
+		return true;
 	} 
 }
 
@@ -103,13 +103,13 @@ function matric_exist($matric) {
 	$sql = "SELECT * FROM users WHERE matric = '$matric'";
 	$result = query($sql);
 
-	if(row_count($result) == 1 && $matric != "180301008") {
+	if(row_count($result) == '') {
 
-		return true;
+		return false;
 
 	}else {
 
-		return false;
+		return true;
 	} 
 }
 
@@ -153,19 +153,6 @@ if(isset($_REQUEST['accredit'])) {
 	//date registered
 	$date = date("d-m-y h:i:sa");
 	
-	//check if email is registered 
-	if(email_exist($email) && $email != 'admin@somssa.com') {
-
-		echo "Sorry! That email has been accredited.";
-
-	} else {
-
-		if(matric_exist($matric) && $matric != '180301008') {
-
-			echo "Uh oh! You can only be accredited once.";
-
-		} else {
-
 		//declare a mail session
 		$_SESSION['mail'] = $email;	
 
@@ -181,9 +168,6 @@ if(isset($_REQUEST['accredit'])) {
 	//refresh page
 	echo '<script>window.location.href ="./vote"</script>';
 
-			
-		}
-	}
 	
 	}
 
