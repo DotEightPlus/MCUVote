@@ -1294,7 +1294,8 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="adeniran" style="color: black;"><b>Adeniran Timileyin</b></p>
+                                                    <p id="adeniran" style="color: black;"><b>Adeniran Timileyin
+                                                            (COCO)</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
@@ -1319,7 +1320,8 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="oladipo" style="color: black;"><b>Oladipo Timileyin</b></p>
+                                                    <p id="oladipo" style="color: black;"><b>Oladipo Timileyin (Timi
+                                                            Turtle)</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
@@ -1398,7 +1400,7 @@ button {
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">100 Level</h5>
+                                                    <h5 style="color: black;">300 Level</h5>
                                                 </td>
                                                 <td id="ratesp7">
                                                     <?php 
@@ -1565,7 +1567,7 @@ button {
                                                     <p id="Rasheed" style="color: black;"><b>Rasheed Loveth</b></p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">100 Level</h5>
+                                                    <h5 style="color: black;">200 Level</h5>
                                                 </td>
                                                 <td id="ratesw5">
                                                     <?php 
