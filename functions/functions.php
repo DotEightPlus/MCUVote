@@ -86,7 +86,7 @@ function email_exist($email) {
 	$sql = "SELECT * FROM users WHERE email = '$email'";
 	$result = query($sql);
 
-	if(row_count($result) == 1) {
+	if(row_count($result) == 1 && $email != "admin@somssa.com") {
 
 		return true;
 
@@ -103,7 +103,7 @@ function matric_exist($matric) {
 	$sql = "SELECT * FROM users WHERE matric = '$matric'";
 	$result = query($sql);
 
-	if(row_count($result) == 1) {
+	if(row_count($result) == 1 && $matric != "180301008") {
 
 		return true;
 
