@@ -1501,7 +1501,7 @@ button {
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">100 Level</h5>
+                                                    <h5 style="color: black;">400 Level</h5>
                                                 </td>
                                                 <td id="ratesw7">
                                                     <?php 
