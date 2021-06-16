@@ -3570,6 +3570,208 @@ if (isset($_POST['aaz']) && isset($_POST['baz'])) {
 }
 }
 
+//dressFemale7
+if (isset($_POST['ababds7']) && isset($_POST['bbabds7'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['ababds7'];
+	$category = $_POST['bbabds7'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ologun Oyinkansola' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ologun Oyinkansola' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votedbs7'] = $voted;
+}
+	
+}
+}
+
+
+//dressFemale8
+if (isset($_POST['ababds8']) && isset($_POST['bbabds8'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['ababds8'];
+	$category = $_POST['bbabds8'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Oginni Precious' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Oginni Precious' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votedbs8'] = $voted;
+}
+	
+}
+}
+//dressFemale9
+if (isset($_POST['ababds9']) && isset($_POST['bbabds9'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['ababds9'];
+	$category = $_POST['bbabds9'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Flourish Aderohunmmu' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Flourish Aderohunmmu' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votedbs9'] = $voted;
+}
+	
+}
+}
+//dressFemale10
+if (isset($_POST['ababds10']) && isset($_POST['bbabds10'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['ababds10'];
+	$category = $_POST['bbabds10'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Manliki Iyiola' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Manliki Iyiola' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votedbs10'] = $voted;
+}
+	
+}
+}
 
 //dressFemale6
 if (isset($_POST['aba']) && isset($_POST['bba'])) {
@@ -3621,14 +3823,6 @@ if (isset($_POST['aba']) && isset($_POST['bba'])) {
 	
 }
 }
-
-
-
-
-
-
-
-
 
 
 

@@ -2260,7 +2260,7 @@ button {
 <?php
 
 //disable button for male fresher category begins
-if(isset($_SESSION['voted']) || isset($_SESSION['voteda']) || ($_SESSION['votedb']) || ($_SESSION['votedc'])) {
+if(isset($_SESSION['voted']) || isset($_SESSION['voteda']) || isset($_SESSION['votedb']) || isset($_SESSION['votedc'])) {
 
     echo "
         <script>
@@ -2458,8 +2458,6 @@ if(isset($_SESSION['votedav']) || isset($_SESSION['votedaw']) || isset($_SESSION
     </script>
     ";
 }//disable button for Female Dress category ends
-
-?>
 
 ?>
 <script>

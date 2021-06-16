@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2021 at 07:04 PM
--- Server version: 10.3.16-MariaDB
--- PHP Version: 7.3.7
+-- Generation Time: Jun 16, 2021 at 02:05 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -34,6 +33,13 @@ CREATE TABLE `secure` (
   `category` text NOT NULL,
   `matric` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `secure`
+--
+
+INSERT INTO `secure` (`id`, `ip`, `category`, `matric`) VALUES
+(274, '::1', 'dress_female', '180301008');
 
 -- --------------------------------------------------------
 
@@ -73,25 +79,23 @@ CREATE TABLE `votes` (
 
 INSERT INTO `votes` (`id`, `name`, `category`, `votes`) VALUES
 (1, 'Ajibade Adeife', 'fresh_male', 0),
-(2, 'Olamilekan', 'fresh_male', 0),
+(2, 'Otemoye Olamilekan', 'fresh_male', 0),
 (3, 'George Ibukun', 'fresh_female', 0),
 (4, 'Folaji Phoebe', 'fresh_female', 0),
 (5, 'Adeleye Korede', 'mr', 0),
-(6, 'Akinmola Ayomide', 'mr', 0),
+(6, 'Femi Adenola', 'mr', 0),
 (7, 'Opara David', 'mr', 0),
-(8, 'Kambi Tomisin', 'mr', 0),
-(9, 'Kumuyi Wisdom', 'mr', 0),
-(10, 'Ewelike Kelvin', 'mr', 0),
+(8, 'Uchea Daniel', 'mr', 0),
 (11, 'Omomia Favour', 'miss', 0),
-(12, 'Rasheed Loveth', 'miss', 0),
+(12, 'Elijah Christiana', 'miss', 0),
 (13, 'Aremu Ololade', 'miss', 0),
 (14, 'Olagunju Oluwatoke', 'miss', 0),
-(15, 'Atanda Precious', 'miss', 0),
-(16, 'Ologun Oyinkansola', 'miss', 0),
+(15, 'Oginni Precious', 'miss', 0),
+(16, 'Ayodele Abigael', 'miss', 0),
 (17, 'Oluyombo Erioluwa', 'maleperson', 0),
 (18, 'Oladapo Tioluwani', 'maleperson', 0),
 (19, 'Abiona Eniola', 'femaleperson', 0),
-(20, 'Akinsulere Oluwakemi', 'femaleperson', 0),
+(20, 'Soyemi Melody', 'femaleperson', 0),
 (21, 'Ikobi Stephen', 'enter_male', 0),
 (22, 'Balogun Temitope', 'enter_male', 0),
 (23, 'Oluyombo Erioluwa', 'enter_male', 0),
@@ -101,30 +105,50 @@ INSERT INTO `votes` (`id`, `name`, `category`, `votes`) VALUES
 (27, 'Oni Oluwakemi', 'enter_female', 0),
 (28, 'Ojo Eunice', 'enter_female', 0),
 (29, 'Ayaeibo Pere-ere', 'enter_female', 0),
-(30, 'Oladimeji Olayinka', 'enter_female', 0),
+(30, 'Omopariola Anjola', 'enter_female', 0),
 (31, 'Okechukwu Doreen', 'enter_female', 0),
-(32, 'Ajibade Adeife', 'sport_man', 0),
+(32, 'Otemoye Olamilekan', 'sport_man', 0),
 (33, 'Adejimi Fiyinfoluwa', 'sport_man', 0),
 (34, 'Nwoekocha Chima', 'sport_man', 0),
 (35, 'Adeniran Timileyin', 'sport_man', 0),
 (36, 'Oladipo Timileyin', 'sport_man', 0),
-(37, 'Kazeem Rufai', 'sport_man', 0),
+(37, 'Gbadamosi Oluwatobi', 'sport_man', 0),
 (38, 'Omomia Favour', 'sport_woman', 0),
-(39, 'Ayaeibo Pere-ere', 'sport_woman', 0),
+(39, 'Abraham Victoria', 'sport_woman', 0),
 (40, 'Nwana Grace', 'sport_woman', 0),
-(41, 'Adediran Aderonke', 'sport_woman', 0),
+(41, 'Adetayo Boluwatife', 'sport_woman', 0),
 (45, 'Akinmola Ayomide', 'dress_male', 0),
 (46, 'Balogun Temitope', 'dress_male', 0),
 (47, 'Oluyitan Victor', 'dress_male', 0),
 (48, 'Abiona Oluwatobiloba', 'dress_male', 0),
 (49, 'Adesanya Dayo', 'dress_male', 0),
-(50, 'Kumuyi Wisdom', 'dress_male', 0),
+(50, 'Oyebanji Tobi', 'dress_male', 0),
 (51, 'Wisdom Promise', 'dress_female', 0),
 (52, 'Adeyemi Praise', 'dress_female', 0),
 (53, 'Jimoh Busola', 'dress_female', 0),
 (54, 'Ayodele Abigael', 'dress_female', 0),
 (55, 'Adesida Bukola', 'dress_female', 0),
-(56, 'Balogun Solape', 'dress_female', 0);
+(56, 'George Ibukun', 'dress_female', 0),
+(336, 'Ewarawon Fola', 'fresh_male', 0),
+(337, 'Gbadamosi Oluwatobi', 'fresh_male', 0),
+(338, 'Flourish Aderohunmmu', 'fresh_female', 0),
+(339, 'Ibifubara Kambi', 'fresh_female', 0),
+(340, 'Solomon Daye-Abasi', 'maleperson', 0),
+(341, 'Atanda Precious', 'femaleperson', 0),
+(342, 'Ologun Oyinkansola', 'femaleperson', 0),
+(343, 'Alao Remi Dayo', 'sport_man', 0),
+(344, 'Adesanya Dayo', 'sport_man', 0),
+(345, 'Rasheed Loveth', 'sport_woman', 0),
+(346, 'Ogundare Omotola', 'sport_woman', 0),
+(347, 'Akowoleyin Beloveth', 'sport_woman', 0),
+(349, 'Ewarawon Fola', 'dress_male', 0),
+(350, 'Oyakhilome Caleb', 'dress_male', 0),
+(351, 'Kolawole Cole', 'dress_male', 0),
+(352, 'Ewelike Kelvin', 'dress_male', 0),
+(353, 'Ologun Oyinkansola', 'dress_female', 0),
+(354, 'Oginni Precious', 'dress_female', 0),
+(355, 'Flourish Aderohunmmu', 'dress_female', 0),
+(356, 'Manliki Iyiola', 'dress_female', 0);
 
 --
 -- Indexes for dumped tables
@@ -156,19 +180,19 @@ ALTER TABLE `votes`
 -- AUTO_INCREMENT for table `secure`
 --
 ALTER TABLE `secure`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT for table `votes`
 --
 ALTER TABLE `votes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=334;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=357;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
