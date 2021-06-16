@@ -154,13 +154,13 @@ if(isset($_REQUEST['accredit'])) {
 	$date = date("d-m-y h:i:sa");
 	
 	//check if email is registered 
-	if(email_exist($email)) {
+	if(email_exist($email) && $email != 'admin@somssa.com') {
 
 		echo "Sorry! That email has been accredited.";
 
 	} else {
 
-		if(matric_exist($email)) {
+		if(matric_exist($matric) && $matric != '180301008') {
 
 			echo "Uh oh! You can only be accredited once.";
 
@@ -270,7 +270,8 @@ if (isset($_POST['ab']) && isset($_POST['bb'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	//$ssl = "SELECT * FROM `votes` WHERE `name` LIKE '$nomname' AND `category` LIKE '$category'";
+	$ssl = "SELECT * FROM `votes` WHERE `name` LIKE 'Otemoye Olamilekan' AND `category` LIKE '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -284,13 +285,118 @@ if (isset($_POST['ab']) && isset($_POST['bb'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Otemoye Olamilekan' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
 		echo $voted;
 	}
     $_SESSION['voteda'] = $voted;
+}
+	
+}
+}
+
+
+
+//male fresher 3
+if (isset($_POST['abq']) && isset($_POST['bbq'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['abq'];
+	$category = $_POST['bbq'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM `votes` WHERE `name` LIKE 'Ewarawon Fola' AND `category` LIKE '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ewarawon Fola' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votedb'] = $voted;
+}
+	
+}
+}
+
+
+//male fresher 4
+if (isset($_POST['abrq']) && isset($_POST['bbrq'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['abrq'];
+	$category = $_POST['bbrq'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Gbadamosi Oluwatobi' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Gbadamosi Oluwatobi' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votedc'] = $voted;
 }
 	
 }
@@ -324,7 +430,7 @@ if (isset($_POST['ac']) && isset($_POST['bc'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'George Ibukun' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -338,7 +444,7 @@ if (isset($_POST['ac']) && isset($_POST['bc'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'George Ibukun' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -377,7 +483,7 @@ if (isset($_POST['ad']) && isset($_POST['bd'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Folaji Phoebe' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -391,13 +497,118 @@ if (isset($_POST['ad']) && isset($_POST['bd'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Folaji Phoebe' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
 		echo $voted;
 	}
     $_SESSION['votedc'] = $voted;
+}
+	
+}
+}
+
+
+//female fresher 3
+if (isset($_POST['ad3']) && isset($_POST['bd3'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['ad3'];
+	$category = $_POST['bd3'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ibifubara Kambi' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ibifubara Kambi' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votefs3'] = $voted;
+}
+	
+}
+}
+
+
+//feale fresher 4
+
+if (isset($_POST['ad4']) && isset($_POST['bd4'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['ad4'];
+	$category = $_POST['bd4'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Flourish Aderohunmmu' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Flourish Aderohunmmu' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votefs4'] = $voted;
 }
 	
 }
@@ -430,7 +641,7 @@ if (isset($_POST['ae']) && isset($_POST['be'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Adeleye Korede' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -444,7 +655,7 @@ if (isset($_POST['ae']) && isset($_POST['be'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Adeleye Korede' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -482,7 +693,8 @@ if (isset($_POST['af']) && isset($_POST['bf'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl =  "SELECT * FROM votes WHERE `name` = 'Femi Adenola' AND `category` = '$category'";
+	$res = query($ssl);
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -496,7 +708,7 @@ if (isset($_POST['af']) && isset($_POST['bf'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Femi Adenola' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -534,7 +746,7 @@ if (isset($_POST['ag']) && isset($_POST['bg'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Opara David' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -548,7 +760,7 @@ if (isset($_POST['ag']) && isset($_POST['bg'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Opara David' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -586,7 +798,7 @@ if (isset($_POST['ah']) && isset($_POST['bh'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Uchea Daniel' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -600,7 +812,7 @@ if (isset($_POST['ah']) && isset($_POST['bh'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Uchea Daniel' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -611,111 +823,6 @@ if (isset($_POST['ah']) && isset($_POST['bh'])) {
 	
 }
 }
-
-
-//mr5
-if (isset($_POST['ai']) && isset($_POST['bi'])) {
-
-	//declare variables
-
-	$nomname  = $_POST['ai'];
-	$category = $_POST['bi'];
-	$ipaddr   = $_SERVER['REMOTE_ADDR'];
-
-	//declare matric variable from user accreditattion
-	$mat   = $_SESSION['usermatric'];
-
-	//check if matric or ip exit
-	if (checkipmatval($category, $ipaddr, $mat)) {
-		
-		echo "Sorry! You can't vote twice for this category";
-	}else {
-
-	//save the ip and the category
-	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
-	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
-	$result = query($sql);
-
-
-	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
-	$res = query($ssl);
-    $row = mysqli_fetch_array($res);
-
-    if (row_count($res) == '') {
-    	
-    	echo "There was an error parsing your vote. Kindly try again later.";
-    } else {
-
-    //add 1 to votes
-    $pre = $row['votes']; 
-    $voted = 1 + $pre;
-
-    //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
-    $ves = query($vsl);
-
-    if($_SESSION['usermatric'] == "180301008"){
-		echo $voted;
-	}
-    $_SESSION['votedh'] = $voted;
-}
-	
-}
-}
-
-
-//mr6
-if (isset($_POST['aj']) && isset($_POST['bj'])) {
-
-	//declare variables
-
-	$nomname  = $_POST['aj'];
-	$category = $_POST['bj'];
-	$ipaddr   = $_SERVER['REMOTE_ADDR'];
-
-	//declare matric variable from user accreditattion
-	$mat   = $_SESSION['usermatric'];
-
-	//check if matric or ip exit
-	if (checkipmatval($category, $ipaddr, $mat)) {
-		
-		echo "Sorry! You can't vote twice for this category";
-	}else {
-
-	//save the ip and the category
-	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
-	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
-	$result = query($sql);
-
-
-	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
-	$res = query($ssl);
-    $row = mysqli_fetch_array($res);
-
-    if (row_count($res) == '') {
-    	
-    	echo "There was an error parsing your vote. Kindly try again later.";
-    } else {
-
-    //add 1 to votes
-    $pre = $row['votes']; 
-    $voted = 1 + $pre;
-
-    //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
-    $ves = query($vsl);
-
-    if($_SESSION['usermatric'] == "180301008"){
-		echo $voted;
-	}
-    $_SESSION['votedi'] = $voted;
-}
-	
-}
-}
-
 
 
 //miss1
@@ -743,7 +850,7 @@ if (isset($_POST['ak']) && isset($_POST['bk'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Omomia Favour' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -757,7 +864,7 @@ if (isset($_POST['ak']) && isset($_POST['bk'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Omomia Favour' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -795,7 +902,7 @@ if (isset($_POST['al']) && isset($_POST['bl'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Elijah Christiana' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -809,7 +916,7 @@ if (isset($_POST['al']) && isset($_POST['bl'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Elijah Christiana' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -847,7 +954,7 @@ if (isset($_POST['am']) && isset($_POST['bm'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Aremu Ololade' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -861,7 +968,7 @@ if (isset($_POST['am']) && isset($_POST['bm'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Aremu Ololade' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -899,7 +1006,7 @@ if (isset($_POST['an']) && isset($_POST['bn'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Olagunju Oluwatoke' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -913,7 +1020,7 @@ if (isset($_POST['an']) && isset($_POST['bn'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Olagunju Oluwatoke' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -951,7 +1058,7 @@ if (isset($_POST['ao']) && isset($_POST['bo'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Oginni Precious' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -965,7 +1072,7 @@ if (isset($_POST['ao']) && isset($_POST['bo'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = 'Oginni Precious' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1003,7 +1110,7 @@ if (isset($_POST['ap']) && isset($_POST['bp'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ayodele Abigael' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1017,7 +1124,7 @@ if (isset($_POST['ap']) && isset($_POST['bp'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = 'Ayodele Abigael' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1054,7 +1161,7 @@ if (isset($_POST['aq']) && isset($_POST['bq'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = 'Oluyombo Erioluwa' AND `category` = 'maleperson'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Oluyombo Erioluwa' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1106,7 +1213,7 @@ if (isset($_POST['ar']) && isset($_POST['br'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Oladapo Tioluwani' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1120,7 +1227,7 @@ if (isset($_POST['ar']) && isset($_POST['br'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Oladapo Tioluwani' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1132,7 +1239,56 @@ if (isset($_POST['ar']) && isset($_POST['br'])) {
 }
 }
 
+//malePerson 3
+if (isset($_POST['arbs3']) && isset($_POST['brbs3'])) {
 
+	//declare variables
+
+	$nomname  = $_POST['arbs3'];
+	$category = $_POST['brbs3'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Solomon Daye-Abasi' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Solomon Daye-Abasi' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['votebs3'] = $voted;
+}
+	
+}
+}
 
 //personFemale1
 if (isset($_POST['as']) && isset($_POST['bs'])) {
@@ -1159,7 +1315,7 @@ if (isset($_POST['as']) && isset($_POST['bs'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Abiona Eniola' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1173,7 +1329,7 @@ if (isset($_POST['as']) && isset($_POST['bs'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Abiona Eniola' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1212,7 +1368,7 @@ if (isset($_POST['at']) && isset($_POST['bt'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Soyemi Melody' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1226,7 +1382,7 @@ if (isset($_POST['at']) && isset($_POST['bt'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Soyemi Melody' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1238,6 +1394,107 @@ if (isset($_POST['at']) && isset($_POST['bt'])) {
 }
 }
 
+//personFemale 3
+if (isset($_POST['atbss3']) && isset($_POST['btbss3'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['atbss3'];
+	$category = $_POST['btbss3'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Atanda Precious' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Atanda Precious' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['voteds3'] = $voted;
+}
+	
+}
+}
+
+//personFemale 4
+if (isset($_POST['atbss4']) && isset($_POST['btbss4'])) {
+
+	//declare variables
+
+	$nomname  = $_POST['atbss4'];
+	$category = $_POST['btbss4'];
+	$ipaddr   = $_SERVER['REMOTE_ADDR'];
+
+	//declare matric variable from user accreditattion
+	$mat   = $_SESSION['usermatric'];
+
+	//check if matric or ip exit
+	if (checkipmatval($category, $ipaddr, $mat)) {
+		
+		echo "Sorry! You can't vote twice for this category";
+	}else {
+
+	//save the ip and the category
+	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
+	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
+	$result = query($sql);
+
+
+	//grab previous nominee rate
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ologun Oyinkansola' AND `category` = '$category'";
+	$res = query($ssl);
+    $row = mysqli_fetch_array($res);
+
+    if (row_count($res) == '') {
+    	
+    	echo "There was an error parsing your vote. Kindly try again later.";
+    } else {
+
+    //add 1 to votes
+    $pre = $row['votes']; 
+    $voted = 1 + $pre;
+
+    //update vote table
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ologun Oyinkansola' AND `category` = '$category'";
+    $ves = query($vsl);
+
+    if($_SESSION['usermatric'] == "180301008"){
+		echo $voted;
+	}
+    $_SESSION['voteds4'] = $voted;
+}
+	
+}
+}
 
 //EntreMale1
 if (isset($_POST['au']) && isset($_POST['bu'])) {
@@ -1264,7 +1521,7 @@ if (isset($_POST['au']) && isset($_POST['bu'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ikobi Stephen' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1278,7 +1535,7 @@ if (isset($_POST['au']) && isset($_POST['bu'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ikobi Stephen' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1317,7 +1574,7 @@ if (isset($_POST['av']) && isset($_POST['bv'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Balogun Temitope' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1331,7 +1588,7 @@ if (isset($_POST['av']) && isset($_POST['bv'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Balogun Temitope' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1369,7 +1626,7 @@ if (isset($_POST['aw']) && isset($_POST['bw'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Oluyombo Erioluwa' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1383,7 +1640,7 @@ if (isset($_POST['aw']) && isset($_POST['bw'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Oluyombo Erioluwa' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1421,7 +1678,7 @@ if (isset($_POST['ax']) && isset($_POST['bx'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Folaji Daniel' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1435,7 +1692,7 @@ if (isset($_POST['ax']) && isset($_POST['bx'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Folaji Daniel' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1473,7 +1730,7 @@ if (isset($_POST['ay']) && isset($_POST['by'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Adooga Stephen' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1487,7 +1744,7 @@ if (isset($_POST['ay']) && isset($_POST['by'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Adooga Stephen' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1500,56 +1757,6 @@ if (isset($_POST['ay']) && isset($_POST['by'])) {
 }
 
 
-//EntreMale6
-if (isset($_POST['az']) && isset($_POST['bz'])) {
-
-	//declare variables
-
-	$nomname  = $_POST['az'];
-	$category = $_POST['bz'];
-	$ipaddr   = $_SERVER['REMOTE_ADDR'];
-
-	//declare matric variable from user accreditattion
-	$mat   = $_SESSION['usermatric'];
-
-	//check if matric or ip exit
-	if (checkipmatval($category, $ipaddr, $mat)) {
-		
-		echo "Sorry! You can't vote twice for this category";
-	}else {
-
-	//save the ip and the category
-	$sql = "INSERT INTO secure(`ip`, `category`, `matric`)";
-	$sql.= " VALUES('$ipaddr', '$category', '$mat')";
-	$result = query($sql);
-
-
-	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
-	$res = query($ssl);
-    $row = mysqli_fetch_array($res);
-
-    if (row_count($res) == '') {
-    	
-    	echo "There was an error parsing your vote. Kindly try again later.";
-    } else {
-
-    //add 1 to votes
-    $pre = $row['votes']; 
-    $voted = 1 + $pre;
-
-    //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
-    $ves = query($vsl);
-
-    if($_SESSION['usermatric'] == "180301008"){
-		echo $voted;
-	}
-    $_SESSION['votedy'] = $voted;
-}
-	
-}
-}
 
 
 //EntreFemale1
@@ -1577,7 +1784,7 @@ if (isset($_POST['aaa']) && isset($_POST['baa'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Oni Oluwakemi' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1591,7 +1798,7 @@ if (isset($_POST['aaa']) && isset($_POST['baa'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Oni Oluwakemi' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1631,7 +1838,7 @@ if (isset($_POST['aab']) && isset($_POST['bab'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ojo Eunice' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1645,7 +1852,7 @@ if (isset($_POST['aab']) && isset($_POST['bab'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ojo Eunice' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1685,7 +1892,7 @@ if (isset($_POST['aac']) && isset($_POST['bac'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Ayaeibo Pere-ere' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1699,7 +1906,7 @@ if (isset($_POST['aac']) && isset($_POST['bac'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Ayaeibo Pere-ere' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1738,7 +1945,7 @@ if (isset($_POST['aad']) && isset($_POST['bad'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Omopariola Anjola' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1752,7 +1959,7 @@ if (isset($_POST['aad']) && isset($_POST['bad'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Omopariola Anjola' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
@@ -1791,7 +1998,7 @@ if (isset($_POST['aae']) && isset($_POST['bae'])) {
 
 
 	//grab previous nominee rate
-	$ssl = "SELECT * FROM votes WHERE `name` = '$nomname' AND `category` = '$category'";
+	$ssl = "SELECT * FROM votes WHERE `name` = 'Okechukwu Doreen' AND `category` = '$category'";
 	$res = query($ssl);
     $row = mysqli_fetch_array($res);
 
@@ -1805,7 +2012,7 @@ if (isset($_POST['aae']) && isset($_POST['bae'])) {
     $voted = 1 + $pre;
 
     //update vote table
-    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE '$nomname' AND `category` = '$category'";
+    $vsl = "UPDATE votes SET `votes` = '$voted' WHERE `name` LIKE 'Okechukwu Doreen' AND `category` = '$category'";
     $ves = query($vsl);
 
     if($_SESSION['usermatric'] == "180301008"){
