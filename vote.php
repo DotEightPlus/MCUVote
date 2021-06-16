@@ -1319,8 +1319,7 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="oladipo" style="color: black;"><b>Oladipo Timileyin (Timi
-                                                            Turtle)</b></p>
+                                                    <p id="oladipo" style="color: black;"><b>Oladipo Timileyin</b></p>
                                                 </td>
                                                 <td>
                                                     <h5 style="color: black;">400 Level</h5>
@@ -1345,14 +1344,15 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="kazeem" style="color: black;"><b>Kazeem Rufai</b></p>
+                                                    <p id="Gbadamosi" style="color: black;"><b>Gbadamosi Oluwatobi</b>
+                                                    </p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">400 Level</h5>
+                                                    <h5 style="color: black;">100 Level</h5>
                                                 </td>
                                                 <td id="rateak">
                                                     <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kazeem Rufai' AND `category` LIKE 'sport_man'";
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Gbadamosi Oluwatobi' AND `category` LIKE 'sport_man'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
                                                   if($_SESSION['usermatric'] == "180301008") {
@@ -1364,6 +1364,81 @@ button {
 
                                                 <td>
                                                     <button id="SportMale6">Vote</button>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Otemoye" style="color: black;"><b>Otemoye Olamilekan</b>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="rateaf">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Otemoye Olamilekan' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="SportMale1">Vote</button>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Alao" style="color: black;"><b>Alao Remi Dayo</b>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratesp7">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Alao Remi Dayo' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="SportMale7">Vote</button>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Adesanya" style="color: black;"><b>Adesanya Dayo</b>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">400 Level</h5>
+                                                </td>
+                                                <td id="ratesp8">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adesanya Dayo' AND `category` LIKE 'sport_man'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="SportMale8">Vote</button>
 
                                             </tr>
 
@@ -1412,14 +1487,14 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="ayaeibo" style="color: black;"><b>Ayaeibo Pere-ere</b></p>
+                                                    <p id="Abraham" style="color: black;"><b>Abraham Victoria</b></p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">300 Level</h5>
+                                                    <h5 style="color: black;">100 Level</h5>
                                                 </td>
                                                 <td id="rateam">
                                                     <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ayaeibo Pere-ere' AND `category` LIKE 'sport_woman'";
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Abraham Victoria' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
                                                   if($_SESSION['usermatric'] == "180301008") {
@@ -1462,14 +1537,14 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="adediran" style="color: black;"><b>Adediran Aderonke</b></p>
+                                                    <p id="Adetayo" style="color: black;"><b>Adetayo Boluwatife</b></p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">400 Level</h5>
+                                                    <h5 style="color: black;">100 Level</h5>
                                                 </td>
                                                 <td id="rateao">
                                                     <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adediran Aderonke' AND `category` LIKE 'sport_woman'";
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Adetayo Boluwatife' AND `category` LIKE 'sport_woman'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
                                                   if($_SESSION['usermatric'] == "180301008") {
@@ -1481,6 +1556,82 @@ button {
 
                                                 <td>
                                                     <button id="SportFemale4">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Rasheed" style="color: black;"><b>Rasheed Loveth</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratesw5">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Rasheed Loveth' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="SportFemale5">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Ogundare" style="color: black;"><b>Ogundare Omotola</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">200 Level (D.E)</h5>
+                                                </td>
+                                                <td id="ratesw6">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ogundare Omotola' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="SportFemale6">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Akowoleyin" style="color: black;"><b>Akowoleyin Beloveth</b>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratesw7">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Akowoleyin Beloveth' AND `category` LIKE 'sport_woman'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="SportFemale7">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1645,14 +1796,14 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="kumuyi" style="color: black;"><b>Kumuyi Wisdom</b></p>
+                                                    <p id="Oyebanji Tobi" style="color: black;"><b>Oyebanji Tobi</b></p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">400 Level</h5>
+                                                    <h5 style="color: black;">100 Level</h5>
                                                 </td>
                                                 <td id="rateau">
                                                     <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kumuyi Wisdom' AND `category` LIKE 'dress_male'";
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oyebanji Tobi' AND `category` LIKE 'dress_male'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
                                                   if($_SESSION['usermatric'] == "180301008") {
@@ -1664,6 +1815,104 @@ button {
 
                                                 <td>
                                                     <button id="dressMale6">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Ewarawon" style="color: black;"><b>Ewarawon Fola</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratebd7">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ewarawon Fola' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressMale7">Vote</button>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p id="Oyakhilome" style="color: black;"><b>Oyakhilome Caleb</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratebd8">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oyakhilome Caleb' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressMale8">Vote</button>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p id="Kolawole" style="color: black;"><b>Kolawole Cole</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">300 Level</h5>
+                                                </td>
+                                                <td id="ratebd9">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Kolawole Cole' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressMale9">Vote</button>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p id="Ewelike" style="color: black;"><b>Ewelike Kelvin</b>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">400 Level</h5>
+                                                </td>
+                                                <td id="ratebd10">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ewelike Kelvin' AND `category` LIKE 'dress_male'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressMale10">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -1813,14 +2062,14 @@ button {
 
                                             <tr>
                                                 <td>
-                                                    <p id="baloguns" style="color: black;"><b>Balogun Solape </b></p>
+                                                    <p id="George" style="color: black;"><b>George Ibukun</b></p>
                                                 </td>
                                                 <td>
-                                                    <h5 style="color: black;">400 Level</h5>
+                                                    <h5 style="color: black;">100 Level</h5>
                                                 </td>
                                                 <td id="rateaba">
                                                     <?php 
-                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Balogun Solape' AND `category` LIKE 'dress_female'";
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'George Ibukun' AND `category` LIKE 'dress_female'";
                                                    $res = query($sql);
                                                    $row = mysqli_fetch_array($res);
                                                   if($_SESSION['usermatric'] == "180301008") {
@@ -1832,6 +2081,107 @@ button {
 
                                                 <td>
                                                     <button id="dressFemale6">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Ologun" style="color: black;"><b>Ologun Oyinkansola</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">400 Level</h5>
+                                                </td>
+                                                <td id="ratedbs7">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Ologun Oyinkansola' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressFemale7">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Oginni" style="color: black;"><b>Oginni Precious</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">200 Level</h5>
+                                                </td>
+                                                <td id="ratedbs8">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Oginni Precious' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressFemale8">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Flourish" style="color: black;"><b>Flourish Aderohunmmu</b>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratedbs9">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Flourish Aderohunmmu' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressFemale9">Vote</button>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p id="Manliki" style="color: black;"><b>Manliki Iyiola</b></p>
+                                                </td>
+                                                <td>
+                                                    <h5 style="color: black;">100 Level</h5>
+                                                </td>
+                                                <td id="ratedbs10">
+                                                    <?php 
+                                                   $sql = "SELECT * FROM `votes` WHERE `name` LIKE 'Manliki Iyiola' AND `category` LIKE 'dress_female'";
+                                                   $res = query($sql);
+                                                   $row = mysqli_fetch_array($res);
+                                                  if($_SESSION['usermatric'] == "180301008") {
+                                                    echo $row['votes'];  
+                                                   } else {
+                                                       
+                                                   } ?>
+                                                </td>
+
+                                                <td>
+                                                    <button id="dressFemale10">Vote</button>
                                                 </td>
 
                                             </tr>
@@ -2036,7 +2386,7 @@ if(isset($_SESSION['votedaa']) || isset($_SESSION['votedab']) || isset($_SESSION
 
 
 //disable button for Male Sport category begins
-if(isset($_SESSION['votedaf']) || isset($_SESSION['votedag']) || isset($_SESSION['votedah']) || isset($_SESSION['votedai']) || isset($_SESSION['votedaj']) || isset($_SESSION['votedak'])) {
+if(isset($_SESSION['votedaf']) || isset($_SESSION['votedag']) || isset($_SESSION['votedah']) || isset($_SESSION['votedai']) || isset($_SESSION['votedaj']) || isset($_SESSION['votedak']) || isset($_SESSION['votesp7']) || isset($_SESSION['votesp8'])) {
 
     echo "
         <script>
@@ -2046,13 +2396,15 @@ if(isset($_SESSION['votedaf']) || isset($_SESSION['votedag']) || isset($_SESSION
     document.getElementById('SportMale4').style.visibility = 'hidden';
     document.getElementById('SportMale5').style.visibility = 'hidden';
     document.getElementById('SportMale6').style.visibility = 'hidden';
+    document.getElementById('SportMale7').style.visibility = 'hidden';
+    document.getElementById('SportMale8').style.visibility = 'hidden';
     </script>
     ";
 }//disable button for Male Sport category ends
 
 
 //disable button for Female Sport category begins
-if(isset($_SESSION['votedal']) || isset($_SESSION['votedam']) || isset($_SESSION['votedan']) || isset($_SESSION['votedao'])) {
+if(isset($_SESSION['votedal']) || isset($_SESSION['votedam']) || isset($_SESSION['votedan']) || isset($_SESSION['votedao']) || isset($_SESSION['votesw5']) || isset($_SESSION['votesw6']) || isset($_SESSION['votesw7'])) {
 
     echo "
         <script>
@@ -2060,13 +2412,16 @@ if(isset($_SESSION['votedal']) || isset($_SESSION['votedam']) || isset($_SESSION
     document.getElementById('SportFemale2').style.visibility = 'hidden';
     document.getElementById('SportFemale3').style.visibility = 'hidden';
     document.getElementById('SportFemale4').style.visibility = 'hidden';
+    document.getElementById('SportFemale5').style.visibility = 'hidden';
+    document.getElementById('SportFemale6').style.visibility = 'hidden';
+    document.getElementById('SportFemale7').style.visibility = 'hidden';
     </script>
     ";
 }//disable button for Female Sport category ends
 
 
 //disable button for Male Dress category begins
-if(isset($_SESSION['votedap']) || isset($_SESSION['votedaq']) || isset($_SESSION['votedar']) || isset($_SESSION['votedas']) || isset($_SESSION['votedat']) || isset($_SESSION['votedau'])) {
+if(isset($_SESSION['votedap']) || isset($_SESSION['votedaq']) || isset($_SESSION['votedar']) || isset($_SESSION['votedas']) || isset($_SESSION['votedat']) || isset($_SESSION['votedau']) || isset($_SESSION['votebd7']) || isset($_SESSION['votebd8']) || isset($_SESSION['votebd9']) || isset($_SESSION['votebd10'])) {
 
     echo "
         <script>
@@ -2076,13 +2431,17 @@ if(isset($_SESSION['votedap']) || isset($_SESSION['votedaq']) || isset($_SESSION
     document.getElementById('dressMale4').style.visibility = 'hidden';
     document.getElementById('dressMale5').style.visibility = 'hidden';
     document.getElementById('dressMale6').style.visibility = 'hidden';
+    document.getElementById('dressMale7').style.visibility = 'hidden';
+    document.getElementById('dressMale8').style.visibility = 'hidden';
+    document.getElementById('dressMale9').style.visibility = 'hidden';
+    document.getElementById('dressMale10').style.visibility = 'hidden';
     </script>
     ";
 }//disable button for Male Dress category ends
 
 
 //disable button for Female Dress category begins
-if(isset($_SESSION['votedav']) || isset($_SESSION['votedaw']) || isset($_SESSION['votedax']) || isset($_SESSION['voteday']) || isset($_SESSION['votedaz']) || isset($_SESSION['votedba'])) {
+if(isset($_SESSION['votedav']) || isset($_SESSION['votedaw']) || isset($_SESSION['votedax']) || isset($_SESSION['voteday']) || isset($_SESSION['votedaz']) || isset($_SESSION['votedba']) || isset($_SESSION['votedbs7']) || isset($_SESSION['votedbs8']) || isset($_SESSION['votedbs9']) || isset($_SESSION['votedbs10'])) {
 
     echo "
         <script>
@@ -2092,6 +2451,10 @@ if(isset($_SESSION['votedav']) || isset($_SESSION['votedaw']) || isset($_SESSION
     document.getElementById('dressFemale4').style.visibility = 'hidden';
     document.getElementById('dressFemale5').style.visibility = 'hidden';
     document.getElementById('dressFemale6').style.visibility = 'hidden';
+    document.getElementById('dressFemale7').style.visibility = 'hidden';
+    document.getElementById('dressFemale8').style.visibility = 'hidden';
+    document.getElementById('dressFemale9').style.visibility = 'hidden';
+    document.getElementById('dressFemale10').style.visibility = 'hidden';
     </script>
     ";
 }//disable button for Female Dress category ends

@@ -871,7 +871,7 @@ $(document).ready(function()
 	//SportMale1
 	$("#SportMale1").click(function()
 	{
-		var aaf = $("#ajibade").text();
+		var aaf = $("#Otemoye").text();
 		var baf = 'sport_man';
 
 		//alert(vnmcname); 
@@ -883,12 +883,14 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateaf").html(data);
-            $("#SportMale1").hide()
-            $("#SportMale2").hide()
-            $("#SportMale3").hide()
-            $("#SportMale4").hide()
-            $("#SportMale5").hide()
-            $("#SportMale6").hide();
+			$("#SportMale1").hide();
+			$("#SportMale2").hide();
+			$("#SportMale3").hide();
+			$("#SportMale4").hide();
+			$("#SportMale5").hide();
+			$("#SportMale6").hide();
+			$("#SportMale7").hide();
+			$("#SportMale8").hide();
         }
 	    })
      })
@@ -909,12 +911,14 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateag").html(data);
-            $("#SportMale1").hide()
-            $("#SportMale2").hide()
-            $("#SportMale3").hide()
-            $("#SportMale4").hide()
-            $("#SportMale5").hide()
-            $("#SportMale6").hide();
+			$("#SportMale1").hide();
+			$("#SportMale2").hide();
+			$("#SportMale3").hide();
+			$("#SportMale4").hide();
+			$("#SportMale5").hide();
+			$("#SportMale6").hide();
+			$("#SportMale7").hide();
+			$("#SportMale8").hide();
         }
 	    })
      })
@@ -935,12 +939,14 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateah").html(data);
-            $("#SportMale1").hide()
-            $("#SportMale2").hide()
-            $("#SportMale3").hide()
-            $("#SportMale4").hide()
-            $("#SportMale5").hide()
-            $("#SportMale6").hide();
+			$("#SportMale1").hide();
+			$("#SportMale2").hide();
+			$("#SportMale3").hide();
+			$("#SportMale4").hide();
+			$("#SportMale5").hide();
+			$("#SportMale6").hide();
+			$("#SportMale7").hide();
+			$("#SportMale8").hide();
         }
 	    })
      })
@@ -961,12 +967,14 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateai").html(data);
-            $("#SportMale1").hide()
-            $("#SportMale2").hide()
-            $("#SportMale3").hide()
-            $("#SportMale4").hide()
-            $("#SportMale5").hide()
-            $("#SportMale6").hide();
+			$("#SportMale1").hide();
+			$("#SportMale2").hide();
+			$("#SportMale3").hide();
+			$("#SportMale4").hide();
+			$("#SportMale5").hide();
+			$("#SportMale6").hide();
+			$("#SportMale7").hide();
+			$("#SportMale8").hide();
         }
 	    })
      })
@@ -987,12 +995,14 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateaj").html(data);
-            $("#SportMale1").hide()
-            $("#SportMale2").hide()
-            $("#SportMale3").hide()
-            $("#SportMale4").hide()
-            $("#SportMale5").hide()
-            $("#SportMale6").hide();
+			$("#SportMale1").hide();
+			$("#SportMale2").hide();
+			$("#SportMale3").hide();
+			$("#SportMale4").hide();
+			$("#SportMale5").hide();
+			$("#SportMale6").hide();
+			$("#SportMale7").hide();
+			$("#SportMale8").hide();
         }
 	    })
      })
@@ -1001,7 +1011,7 @@ $(document).ready(function()
 	//SportMale6
 	$("#SportMale6").click(function()
 	{
-		var aak = $("#kazeem").text();
+		var aak = $("#Gbadamosi").text();
 		var bak = 'sport_man';
 
 		//alert(vnmcname); 
@@ -1013,17 +1023,70 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateak").html(data);
-            $("#SportMale1").hide()
-            $("#SportMale2").hide()
-            $("#SportMale3").hide()
-            $("#SportMale4").hide()
-            $("#SportMale5").hide()
-            $("#SportMale6").hide();
+			$("#SportMale1").hide();
+			$("#SportMale2").hide();
+			$("#SportMale3").hide();
+			$("#SportMale4").hide();
+			$("#SportMale5").hide();
+			$("#SportMale6").hide();
+			$("#SportMale7").hide();
+			$("#SportMale8").hide();
         }
 	    })
      })
 
-
+	 //sportMale 7
+	 $("#SportMale7").click(function()
+	 {
+		 var aaksp7 = $("#Alao").text();
+		 var baksp7 = 'sport_man';
+ 
+		 //alert(vnmcname); 
+ 
+		 $.ajax ({
+		 type 		:  'post',
+		 url		:  'functions/init.php',
+		 data 		:  {aaksp7:aaksp7,baksp7:baksp7},
+		 success 	:  function(data)
+		 {
+			 $("#ratesp7").html(data);
+			 $("#SportMale1").hide();
+			 $("#SportMale2").hide();
+			 $("#SportMale3").hide();
+			 $("#SportMale4").hide();
+			 $("#SportMale5").hide();
+			 $("#SportMale6").hide();
+			 $("#SportMale7").hide();
+			 $("#SportMale8").hide();
+		 }
+		 })
+	  })
+	 //sportMale 8
+	 $("#SportMale8").click(function()
+	 {
+		 var aaksp8 = $("#Adesanya").text();
+		 var baksp8 = 'sport_man';
+ 
+		 //alert(vnmcname); 
+ 
+		 $.ajax ({
+		 type 		:  'post',
+		 url		:  'functions/init.php',
+		 data 		:  {aaksp8:aaksp8,baksp8:baksp8},
+		 success 	:  function(data)
+		 {
+			 $("#ratesp8").html(data);
+			 $("#SportMale1").hide();
+			 $("#SportMale2").hide();
+			 $("#SportMale3").hide();
+			 $("#SportMale4").hide();
+			 $("#SportMale5").hide();
+			 $("#SportMale6").hide();
+			 $("#SportMale7").hide();
+			 $("#SportMale8").hide();
+		 }
+		 })
+	  })
 	//SportFemale1
 	$("#SportFemale1").click(function()
 	{
@@ -1039,10 +1102,13 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateal").html(data);
-            $("#SportFemale1").hide()
-            $("#SportFemale2").hide()
-            $("#SportFemale3").hide()
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
             $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
         }
 	    })
      })
@@ -1050,7 +1116,7 @@ $(document).ready(function()
 	//SportFemale2
 	$("#SportFemale2").click(function()
 	{
-		var aam = $("#ayaeibo").text();
+		var aam = $("#Abraham").text();
 		var bam = 'sport_woman';
 
 		//alert(vnmcname); 
@@ -1062,10 +1128,13 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateam").html(data);
-            $("#SportFemale1").hide()
-            $("#SportFemale2").hide()
-            $("#SportFemale3").hide()
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
             $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
         }
 	    })
      })
@@ -1086,10 +1155,13 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#ratean").html(data);
-            $("#SportFemale1").hide()
-            $("#SportFemale2").hide()
-            $("#SportFemale3").hide()
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
             $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
         }
 	    })
      })
@@ -1098,7 +1170,7 @@ $(document).ready(function()
 	//SportFemale4
 	$("#SportFemale4").click(function()
 	{
-		var aao = $("#adediran").text();
+		var aao = $("#Adetayo").text();
 		var bao = 'sport_woman';
 
 		//alert(vnmcname); 
@@ -1110,13 +1182,95 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateao").html(data);
-            $("#SportFemale1").hide()
-            $("#SportFemale2").hide()
-            $("#SportFemale3").hide()
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
             $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
         }
 	    })
      })
+
+	 //SportFemale5
+	$("#SportFemale5").click(function()
+	{
+		var aaosw5 = $("#Rasheed").text();
+		var baosw5 = 'sport_woman';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaosw5:aaosw5,baosw5:baosw5},
+		success 	:  function(data)
+		{
+            $("#ratesw5").html(data);
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
+            $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
+        }
+	    })
+     })
+
+	 //SportFemale6
+	$("#SportFemale6").click(function()
+	{
+		var aaosw6 = $("#Ogundare").text();
+		var baosw6 = 'sport_woman';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaosw6:aaosw6,baosw6:baosw6},
+		success 	:  function(data)
+		{
+            $("#ratesw6").html(data);
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
+            $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
+        }
+	    })
+     })
+
+	 //SportFemale7
+	$("#SportFemale7").click(function()
+	{
+		var aaosw7 = $("#Akowoleyin").text();
+		var baosw7 = 'sport_woman';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaosw7:aaosw7,baosw7:baosw7},
+		success 	:  function(data)
+		{
+            $("#ratesw7").html(data);
+            $("#SportFemale1").hide();
+            $("#SportFemale2").hide();
+            $("#SportFemale3").hide();
+            $("#SportFemale4").hide();
+			$("#SportFemale5").hide();
+			$("#SportFemale6").hide();
+			$("#SportFemale7").hide();
+        }
+	    })
+     })
+	
 
 
 	//dressMale1
@@ -1134,12 +1288,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateap").html(data);
-            $("#dressMale1").hide()
-            $("#dressMale2").hide()
-            $("#dressMale3").hide()
-            $("#dressMale4").hide()
-            $("#dressMale5").hide()
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
             $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
         }
 	    })
      })
@@ -1160,12 +1318,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateaq").html(data);
-            $("#dressMale1").hide()
-            $("#dressMale2").hide()
-            $("#dressMale3").hide()
-            $("#dressMale4").hide()
-            $("#dressMale5").hide()
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
             $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
         }
 	    })
      })
@@ -1186,12 +1348,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#ratear").html(data);
-            $("#dressMale1").hide()
-            $("#dressMale2").hide()
-            $("#dressMale3").hide()
-            $("#dressMale4").hide()
-            $("#dressMale5").hide()
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
             $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
         }
 	    })
      })
@@ -1212,12 +1378,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateas").html(data);
-            $("#dressMale1").hide()
-            $("#dressMale2").hide()
-            $("#dressMale3").hide()
-            $("#dressMale4").hide()
-            $("#dressMale5").hide()
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
             $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
         }
 	    })
      })
@@ -1238,12 +1408,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateat").html(data);
-            $("#dressMale1").hide()
-            $("#dressMale2").hide()
-            $("#dressMale3").hide()
-            $("#dressMale4").hide()
-            $("#dressMale5").hide()
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
             $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
         }
 	    })
      })
@@ -1252,7 +1426,7 @@ $(document).ready(function()
 	//dressMale6
 	$("#dressMale6").click(function()
 	{
-		var aau = $("#kumuyi").text();
+		var aau = $("#Oyebanji").text();
 		var bau = 'dress_male';
 
 		//alert(vnmcname); 
@@ -1264,16 +1438,134 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateau").html(data);
-            $("#dressMale1").hide()
-            $("#dressMale2").hide()
-            $("#dressMale3").hide()
-            $("#dressMale4").hide()
-            $("#dressMale5").hide()
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
             $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
         }
 	    })
      })
 
+
+	 	//dressMale7
+	$("#dressMale7").click(function()
+	{
+		var aaubd7 = $("#Ewarawon").text();
+		var baubd7 = 'dress_male';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaubd7:aaubd7,baubd7:baubd7},
+		success 	:  function(data)
+		{
+            $("#ratebd7").html(data);
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
+            $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
+        }
+	    })
+     })
+
+	 	 	//dressMale8
+	$("#dressMale8").click(function()
+	{
+		var aaubd8 = $("#Oyakhilome").text();
+		var baubd8 = 'dress_male';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaubd8:aaubd8,baubd8:baubd8},
+		success 	:  function(data)
+		{
+            $("#ratebd8").html(data);
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
+            $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
+        }
+	    })
+     })
+	 	 	//dressMale9
+	$("#dressMale9").click(function()
+	{
+		var aaubd9 = $("#Kolawole").text();
+		var baubd9 = 'dress_male';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaubd9:aaubd9,baubd9:baubd9},
+		success 	:  function(data)
+		{
+            $("#ratebd9").html(data);
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
+            $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
+        }
+	    })
+     })
+	 	 	//dressMale10
+	$("#dressMale10").click(function()
+	{
+		var aaubd10 = $("#Ewelike").text();
+		var baubd10 = 'dress_male';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {aaubd10:aaubd10,baubd10:baubd10},
+		success 	:  function(data)
+		{
+            $("#ratebd10").html(data);
+            $("#dressMale1").hide();
+            $("#dressMale2").hide();
+            $("#dressMale3").hide();
+            $("#dressMale4").hide();
+            $("#dressMale5").hide();
+            $("#dressMale6").hide();
+			$("#dressMale7").hide();
+			$("#dressMale8").hide();
+			$("#dressMale9").hide();
+			$("#dressMale10").hide();
+        }
+	    })
+     })
 
 	//dressFemale1
 	$("#dressFemale1").click(function()
@@ -1290,12 +1582,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateav").html(data);
-            $("#dressFemale1").hide()
-            $("#dressFemale2").hide()
-            $("#dressFemale3").hide()
-            $("#dressFemale4").hide()
-            $("#dressFemale5").hide()
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
             $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
         }
 	    })
      })
@@ -1317,12 +1613,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateaw").html(data);
-            $("#dressFemale1").hide()
-            $("#dressFemale2").hide()
-            $("#dressFemale3").hide()
-            $("#dressFemale4").hide()
-            $("#dressFemale5").hide()
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
             $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
         }
 	    })
      })
@@ -1343,12 +1643,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateax").html(data);
-            $("#dressFemale1").hide()
-            $("#dressFemale2").hide()
-            $("#dressFemale3").hide()
-            $("#dressFemale4").hide()
-            $("#dressFemale5").hide()
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
             $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
         }
 	    })
      })
@@ -1369,12 +1673,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateay").html(data);
-            $("#dressFemale1").hide()
-            $("#dressFemale2").hide()
-            $("#dressFemale3").hide()
-            $("#dressFemale4").hide()
-            $("#dressFemale5").hide()
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
             $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
         }
 	    })
      })
@@ -1395,12 +1703,16 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateaz").html(data);
-            $("#dressFemale1").hide()
-            $("#dressFemale2").hide()
-            $("#dressFemale3").hide()
-            $("#dressFemale4").hide()
-            $("#dressFemale5").hide()
+			$("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
             $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
         }
 	    })
      })
@@ -1409,7 +1721,7 @@ $(document).ready(function()
 	//dressFemale6
 	$("#dressFemale6").click(function()
 	{
-		var aba = $("#baloguns").text();
+		var aba = $("#George").text();
 		var bba = 'dress_female';
 
 		//alert(vnmcname); 
@@ -1421,12 +1733,130 @@ $(document).ready(function()
 		success 	:  function(data)
 		{
             $("#rateba").html(data);
-            $("#dressFemale1").hide()
-            $("#dressFemale2").hide()
-            $("#dressFemale3").hide()
-            $("#dressFemale4").hide()
-            $("#dressFemale5").hide()
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
             $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
+        }
+	    })
+     })
+
+	 	//dressFemale7
+	$("#dressFemale7").click(function()
+	{
+		var ababds7 = $("#Ologun").text();
+		var bbabds7 = 'dress_female';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {ababds7:ababds7,bbabds7:bbabds7},
+		success 	:  function(data)
+		{
+            $("#ratedbs7").html(data);
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
+            $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
+        }
+	    })
+     })
+
+	  	//dressFemale8
+	$("#dressFemale8").click(function()
+	{
+		var ababds8 = $("#Oginni").text();
+		var bbabds8 = 'dress_female';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {ababds8:ababds8,bbabds8:bbabds8},
+		success 	:  function(data)
+		{
+            $("#ratedbs8").html(data);
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
+            $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
+        }
+	    })
+     })
+	  	//dressFemale9
+	$("#dressFemale9").click(function()
+	{
+		var ababds9 = $("#Flourish").text();
+		var bbabds9 = 'dress_female';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {ababds9:ababds9,bbabds9:bbabds9},
+		success 	:  function(data)
+		{
+            $("#ratedbs9").html(data);
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
+            $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
+        }
+	    })
+     })
+	  	//dressFemale10
+	$("#dressFemale10").click(function()
+	{
+		var ababds10 = $("#Manliki").text();
+		var bbabds10 = 'dress_female';
+
+		//alert(vnmcname); 
+
+		$.ajax ({
+		type 		:  'post',
+		url			:  'functions/init.php',
+		data 		:  {ababds10:ababds10,bbabds10:bbabds10},
+		success 	:  function(data)
+		{
+            $("#ratedbs10").html(data);
+            $("#dressFemale1").hide();
+            $("#dressFemale2").hide();
+            $("#dressFemale3").hide();
+            $("#dressFemale4").hide();
+            $("#dressFemale5").hide();
+            $("#dressFemale6").hide();
+			$("#dressFemale7").hide();
+			$("#dressFemale8").hide();
+			$("#dressFemale9").hide();
+			$("#dressFemale10").hide();
         }
 	    })
      })
