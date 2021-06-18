@@ -58,11 +58,11 @@
                             <nav>
                                 <ul id="navigation">
                                     <li><a href="./">Home</a></li>
-                                    <li><a href="./programmes">SOMSSA`<?php echo date("y") ?></a>
+                                    <li><a href="./programmes">SOMSSA`<?php echo date("y") ?> Programme</a>
                                     </li>
                                     <li><a href="./excos">SOMSSA Excos' <?php echo date("y") ?></a>
                                     </li>
-                                   <!-- <li><a href="./vote">Vote <?php echo date("Y") ?> Nominees</a></li> -->
+                                    <!-- <li><a href="./vote">Vote <?php echo date("Y") ?> Nominees</a></li> -->
                                 </ul>
                             </nav>
                         </div>
